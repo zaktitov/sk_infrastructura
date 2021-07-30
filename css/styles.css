@@ -1,4 +1,3 @@
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -79,4 +78,14 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*--------------------*/
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+/*-------- DEFAULT SETTINGS + WRAPPER ------------*/
