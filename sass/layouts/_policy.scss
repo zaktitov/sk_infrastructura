@@ -1,0 +1,52 @@
+.policy {
+  @extend %padding;
+  background-color: teal;
+
+  &__heading {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 0.93;
+    color: #ffffff;
+  }
+
+  &__wrapper {
+    display: inline-flex;
+    margin-top: 25px;
+  }
+
+  &__title {
+    @extend %titlePolicy;
+    margin-bottom: 10px;
+  }
+
+  &__text-container {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    @extend %textPolicy;
+  }
+
+  &__icon {
+    @extend %iconParam;
+    margin-right: 13px;
+  }
+
+  .policy__btn-about-us {
+    display: block;
+    width: 100%;
+    margin-top: 32px;
+    padding: 10px 0 10px 0;
+    @extend %hoverColor;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    color: #ffffff;
+    border: 1px solid;
+    @extend %borderColor;
+  }
+}

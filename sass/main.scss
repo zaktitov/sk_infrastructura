@@ -1,1 +1,13 @@
-
+// BASE
+@import "./base/reset";
+// LAYOUTS
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/footer";
+@import "./layouts/policy";
+@import "./layouts/slider";
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/patterns";
+// @import "./utils/new";

@@ -1,0 +1,14 @@
+:root {
+  --bgc: #171717;
+  --mainTextColor: #ffffff;
+  --secondaryTextColor: #e4b564;
+  --hoverTextcolor: black;
+  --hoverBgcBtns: #e4b564;
+  --formColor: black;
+  --formInputColor: #0e0e0e;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+// $-переменная
+// %-шаблон - @extend %nameOfPattern
+// @mixin nameOf($green,$90){color green; font size 90;}  >>> @include nameOf(red,60)

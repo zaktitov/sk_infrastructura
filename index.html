@@ -1,36 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio1</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
+<!-- BODY -->
 
 <body>
   <div class="wrapper">
-    <header>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="" class="nav__link">Main</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
-          <li class="nav__item"><a href="" class="nav__link">About us</a></li>
-          <li class="nav__item"><a href="" class="nav__link">News</a></li>
-        </ul>
-      </nav>
+    <!-- !====HEADER==== -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__burger">
+          <span></span>
+        </div>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="" class="header__menu-item-link">Главная
+              </a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link">Компания</a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link">Вакансии</a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="little">Услуги</span></a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="header__span-little">Сети
+                  водоснабжения</span></a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="header__span-little">Водоотведение и
+                  канализация</span></a>
+            </li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="header__span-little">Наружные
+                  тепловые сети</span></a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="header__span-little">Монтаж Ж/Б
+                  конструкций</span></a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="header__span-little">Благоустройство территорий</span></a>
+            </li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link">Проекты</a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link">Контакты</a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                  class="header__span-little">Политика
+                  конфиденциальности</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="header__mobNumber" href="tel:+7(812)4016495"><span class="header__mobNumber-color">+7
+            (812)</span> 401-64-95</a>
+
+        <a class="header__formBtn" href="">
+          <svg class="header__icon-phone" width="16" height="16">
+            <use href="./images/icons/sprite.svg#phone"></use>
+          </svg>
+          <span class="header__formBtn-span">Обратный звонок</span>
+        </a>
+      </div>
     </header>
-    <main>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veniam dicta reprehenderit distinctio at modi ullam
-      vel iste sapiente? Maiores, incidunt perferendis quae numquam debitis suscipit quia quos dolor odio!
+
+    <!-- !=====MAIN===== -->
+    <main class="main">
+      <div class="main__container">
+        <section class="hero">
+          <h1 class="hero__logo">
+            <span class="visually-hidden">Строительная компания "Инфраструктура"</span>
+          </h1>
+          <!-- !first list -->
+          <ul class="hero__canDo-list">
+            <li class="hero__canDo-item">
+              <svg class="hero__icon">
+                <use href="./images/icons/sprite.svg#kranik"></use>
+              </svg>
+              Монтаж сетей водоснабжения
+            </li>
+            <li class="hero__canDo-item">
+              <svg class="hero__icon icon">
+                <use href="./images/icons/sprite.svg#truba"></use>
+              </svg>
+              Водоотведение и канализация
+            </li>
+            <li class="hero__canDo-item">
+              <svg class="hero__icon icon">
+                <use href="./images/icons/sprite.svg#beton-block"></use>
+              </svg>
+              Монтаж Ж/Б конструкций
+            </li>
+            <li class="hero__canDo-item">
+              <svg class="hero__icon icon">
+                <use href="./images/icons/sprite.svg#derevo"></use>
+              </svg>
+              Благоустройство территории
+            </li>
+            <li class="hero__canDo-item">
+              <svg class="hero__icon icon">
+                <use href="./images/icons/sprite.svg#radiator"></use>
+              </svg>
+              Наружные тепловые сети и тепловые пункты
+            </li>
+          </ul>
+          <!-- !SECOND LIST -->
+          <h2 class="hero__fullComp">Полный комплекс работ:</h2>
+          <ul class="hero__fullComp-list">
+            <li class="hero__fullComp-item">проектирование</li>
+            <li class="hero__fullComp-item">согласование</li>
+            <li class="hero__fullComp-item">строительно-монтажные работы</li>
+            <li class="hero__fullComp-item">пусконаладочные работы</li>
+            <li class="hero__fullComp-item">сервисное обслуживание</li>
+          </ul>
+        </section>
+
+        <!-- !________POLICY_________ -->
+
+        <section class="policy">
+          <h2 class="policy__heading">Наши принципы</h2>
+          <!-- 1 -->
+          <div class="policy__wrapper">
+            <svg class="policy__icon">
+              <use href="./images/icons/sprite.svg#quality"></use>
+            </svg>
+            <div class="policy__text-container">
+              <h3 class="policy__title">Качество</h3>
+              <p class="policy__text">- используем лучшие материалы и комплектующие</p>
+              <p class="policy__text">- обладаем собственным парком
+                техники
+              </p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="policy__wrapper">
+            <svg class="policy__icon">
+              <use href="./images/icons/sprite.svg#skill"></use>
+            </svg>
+            <div class="policy__text-container">
+              <h3 class="policy__title">Профессионализм,
+                эффективность, развитие</h3>
+              <p class="policy__text">- Работаем с 2015 года</p>
+              <p class="policy__text">- ТОПовые специалисты</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="policy__wrapper">
+            <svg class="policy__icon">
+              <use href="./images/icons/sprite.svg#skill"></use>
+            </svg>
+            <div class="policy__text-container">
+              <h3 class="policy__title">Предсказуемость
+                и надежность</h3>
+              <p class="policy__text">- Нацеленность на результат</p>
+              <p class="policy__text">- Партнерские отношения</p>
+            </div>
+          </div>
+
+          <a href="" class="policy__btn-about-us">Подробнее о компании</a>
+        </section>
+
+        <section class="section">
+          <div class="slider">
+            <!-- 1 -->
+            <div class="slider__item">
+              <img src="./images/machines/machinery_img1.png" alt="" class="slider__img">
+            </div>
+            <!-- 2 -->
+            <div class="slider__item">
+              <img src="./images/machines/tractor.png" alt="" class="slider__img">
+            </div>
+            <!-- 3 -->
+            <div class="slider__item">
+              <img src="./images/machines/machinery_img1.png" alt="" class="slider__img">
+            </div>
+            <!-- 4 -->
+            <div class="slider__item">
+              <img src="./images/machines/tractor.png" alt="" class="slider__img">
+            </div>
+            <!-- 5 -->
+            <div class="slider__item">
+              <img src="./images/machines/machinery_img1.png" alt="" class="slider__img">
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus perferendis fuga,
+          aspernatur tempora
+          provident amet veniam numquam quod placeat odio laudantium ab omnis voluptatem accusantium earum
+          commodi magni
+          accusamus libero enim qui atque? Illo consequuntur, quibusdam quidem neque facere praesentium saepe
+          earum
+          deserunt
+          modi, repudiandae amet nemo nobis error!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus laborum iusto similique
+          voluptatibus. Pariatur placeat dicta quasi amet ad natus molestiae eligendi atque commodi veniam
+          aliquam eum
+          esse et deleniti, doloribus quidem unde earum, delectus sint dignissimos nam impedit dolor illo
+          laborum? Est
+          sunt tempore ducimus quas sapiente, consectetur fugiat possimus ratione harum doloribus assumenda,
+          dolores
+          doloremque cum eos maiores sed magni quod exercitationem ad minima aut. Numquam, neque esse. Labore
+          temporibus
+          minima cupiditate laboriosam cumque aut modi saepe et deserunt possimus corrupti maiores optio
+          eveniet laborum
+          sint, neque corporis, molestiae quaerat vel ipsam. Inventore laudantium ipsa hic dolores?
+        </section>
+
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus perferendis fuga,
+          aspernatur tempora
+          provident amet veniam numquam quod placeat odio laudantium ab omnis voluptatem accusantium earum
+          commodi magni
+          accusamus libero enim qui atque? Illo consequuntur, quibusdam quidem neque facere praesentium saepe
+          earum
+          deserunt
+          modi, repudiandae amet nemo nobis error!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus laborum iusto similique
+          voluptatibus. Pariatur placeat dicta quasi amet ad natus molestiae eligendi atque commodi veniam
+          aliquam eum
+          esse et deleniti, doloribus quidem unde earum, delectus sint dignissimos nam impedit dolor illo
+          laborum? Est
+          sunt tempore ducimus quas sapiente, consectetur fugiat possimus ratione harum doloribus assumenda,
+          dolores
+          doloremque cum eos maiores sed magni quod exercitationem ad minima aut. Numquam, neque esse. Labore
+          temporibus
+          minima cupiditate laboriosam cumque aut modi saepe et deserunt possimus corrupti maiores optio
+          eveniet laborum
+          sint, neque corporis, molestiae quaerat vel ipsam. Inventore laudantium ipsa hic dolores?
+        </section>
+
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus perferendis fuga,
+          aspernatur tempora
+          provident amet veniam numquam quod placeat odio laudantium ab omnis voluptatem accusantium earum
+          commodi magni
+          accusamus libero enim qui atque? Illo consequuntur, quibusdam quidem neque facere praesentium saepe
+          earum
+          deserunt
+          modi, repudiandae amet nemo nobis error!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus laborum iusto similique
+          voluptatibus. Pariatur placeat dicta quasi amet ad natus molestiae eligendi atque commodi veniam
+          aliquam eum
+          esse et deleniti, doloribus quidem unde earum, delectus sint dignissimos nam impedit dolor illo
+          laborum? Est
+          sunt tempore ducimus quas sapiente, consectetur fugiat possimus ratione harum doloribus assumenda,
+          dolores
+          doloremque cum eos maiores sed magni quod exercitationem ad minima aut. Numquam, neque esse. Labore
+          temporibus
+          minima cupiditate laboriosam cumque aut modi saepe et deserunt possimus corrupti maiores optio
+          eveniet laborum
+          sint, neque corporis, molestiae quaerat vel ipsam. Inventore laudantium ipsa hic dolores?
+        </section>
+
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloribus perferendis fuga,
+          aspernatur tempora
+          provident amet veniam numquam quod placeat odio laudantium ab omnis voluptatem accusantium earum
+          commodi magni
+          accusamus libero enim qui atque? Illo consequuntur, quibusdam quidem neque facere praesentium saepe
+          earum
+          deserunt
+          modi, repudiandae amet nemo nobis error!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus laborum iusto similique
+          voluptatibus. Pariatur placeat dicta quasi amet ad natus molestiae eligendi atque commodi veniam
+          aliquam eum
+          esse et deleniti, doloribus quidem unde earum, delectus sint dignissimos nam impedit dolor illo
+          laborum? Est
+          sunt tempore ducimus quas sapiente, consectetur fugiat possimus ratione harum doloribus assumenda,
+          dolores
+          doloremque cum eos maiores sed magni quod exercitationem ad minima aut. Numquam, neque esse. Labore
+          temporibus
+          minima cupiditate laboriosam cumque aut modi saepe et deserunt possimus corrupti maiores optio
+          eveniet laborum
+          sint, neque corporis, molestiae quaerat vel ipsam. Inventore laudantium ipsa hic dolores?
+        </section>
+      </div>
     </main>
-    <footer>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vitae.
+
+    <!-- !======FOOTER====== -->
+    <footer class="footer">
+      <div class="footer__container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint corrupti qui officiis dicta
+        fugiat!
+      </div>
     </footer>
   </div>
 
-  <script src="./index.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> -->
+  <script src="./js/burger.js" type="module"></script>
+  <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>

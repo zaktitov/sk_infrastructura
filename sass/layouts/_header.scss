@@ -1,0 +1,224 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgc);
+    z-index: 3;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+
+    @extend %mediaScreen;
+  }
+
+  &__burger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__burger:hover,
+  &__burger:focus {
+    transform: scale(1.08);
+  }
+
+  &__burger::before,
+  &__burger::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+  }
+
+  &__burger::before {
+    top: 0;
+    width: 23px;
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+    margin-top: 5px;
+  }
+
+  &__burger.active::before {
+    transform: rotate(45deg);
+    top: 18px;
+    width: 30px;
+    margin-top: 0px;
+  }
+
+  &__burger::after {
+    bottom: 0;
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+    margin-bottom: 5px;
+  }
+
+  &__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 18px;
+    margin-bottom: 0px;
+  }
+
+  &__burger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 18px;
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__burger.active span {
+    transform: scale(0);
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--bgc);
+    transform: translateY(-100%);
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+    overflow: auto;
+    opacity: 0;
+  }
+
+  &__menu.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &__menu-list {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 20px;
+  }
+
+  &__menu-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &__menu-item-link {
+    display: inline-block;
+    width: 100%;
+    /* border: var(--hoverBgcBtns) 1px solid; */
+    padding: 5px;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 2.2;
+    color: #ffffff;
+    transition: all var(--transition-duration) var(--transition-timing-function);
+  }
+  &__menu-item-link:active,
+  &__menu-item-link:hover,
+  &__menu-item-link:focus {
+    color: var(--hoverBgcBtns);
+  }
+
+  &__span-little {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &__mobNumber {
+    margin-left: auto;
+    color: var(--mainTextColor);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.45;
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+    position: relative;
+    z-index: 4;
+
+    @media screen and (max-width: 330px) {
+      margin-left: 20px;
+    }
+  }
+
+  &__mobNumber:hover,
+  &__mobNumber:focus {
+    transform: scale(1.05);
+  }
+
+  &__mobNumber-color {
+    color: var(--secondaryTextColor);
+  }
+
+  &__formBtn {
+    margin-left: 20px;
+    min-height: 50px;
+    min-width: 50px;
+    border: var(--secondaryTextColor) solid 1px;
+    padding: 17px;
+    color: var(--secondaryTextColor);
+    background-color: transparent;
+    transition: background-color var(--transition-duration)
+        var(--transition-timing-function),
+      color var(--transition-duration) var(--transition-timing-function);
+    position: relative;
+    z-index: 4;
+
+    @media screen and (min-width: 1460px) {
+      margin-left: 36px;
+      padding: 10px 25px;
+    }
+  }
+
+  &__formBtn:hover,
+  &__formBtn:focus {
+    color: black;
+    background-color: var(--hoverBgcBtns);
+    border-color: var(--formInputColor);
+  }
+
+  &__formBtn-span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.666;
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+
+    color: var(--secondaryTextColor);
+
+    @media screen and (max-width: 1459px) {
+      display: none;
+    }
+  }
+
+  &__formBtn:hover &__formBtn-span {
+    color: currentColor;
+  }
+
+  &__icon-phone {
+    fill: currentColor;
+  }
+}
