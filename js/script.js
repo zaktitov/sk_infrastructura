@@ -8,7 +8,7 @@ $(document).ready(function () {
     easing: "ease",
     infinite: true,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2500,
     pauseOnFocus: true,
     pauseOnHover:true,
@@ -22,8 +22,12 @@ $(document).ready(function () {
     rows: false,
     slidesPerRow: false,
     vertical: false,
-    verticalSwiping:false,
-    
+    verticalSwiping: false,
+    responsive: [{},],
+    mobileFirst: true,
+    appendArrows: $(`.content`),
+    appendDots: $(`.content`),
+    fade:false,
     
   })
 });
