@@ -9,6 +9,8 @@
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// cubic-bezier(0.05, 0, 0.75, 1)
 // $-переменная
 // %-шаблон - @extend %nameOfPattern
 // @mixin nameOf($green,$90){color green; font size 90;}  >>> @include nameOf(red,60);

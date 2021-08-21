@@ -1,6 +1,12 @@
 .policy {
   @extend %padding;
 
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    @extend %mediaScreen;
+  }
+
   &__heading {
     margin-bottom: 25px;
     font-weight: 600;
@@ -48,4 +54,8 @@
     border: 1px solid;
     @extend %borderColor;
   }
+}
+.policy__flex-container {
+  display: flex;
+  flex-direction: column;
 }

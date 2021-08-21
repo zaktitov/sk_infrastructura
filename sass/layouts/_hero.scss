@@ -2,25 +2,26 @@
   flex: 1 1 auto;
   color: #ffffff;
   background-color: var(--bgc);
+}
 
-  &__container {
-    margin: 0 auto;
-    width: 100%;
-    padding: 0px 20px;
-    // border: yellow 1px solid;
+.hero__container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px 20px;
+  // border: yellow 1px solid;
 
-    @extend %mediaScreen;
-  }
+  @extend %mediaScreen;
 }
 
 .hero {
   padding: 62px 0 62px 0px;
   background-color: slategray;
-  background: url(../images/hero/shield-pc-1x.svg) 80% center no-repeat,
+  background: url(../images/hero/shield-pc-1x.svg) 75% 50% no-repeat,
     url(../images/hero/hero-pc-1x.jpg);
   background-size: 400px 520px, cover;
   @media screen and (max-width: 768px) {
     background-image: none;
+    background-attachment: fixed;
   }
 
   &__logo {

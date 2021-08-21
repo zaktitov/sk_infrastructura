@@ -1,6 +1,7 @@
 // BASE
 @import "./base/reset";
 // LAYOUTS
+@import "./layouts/clients";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/footer";
@@ -10,4 +11,3 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/patterns";
-// @import "./utils/new";

@@ -27,7 +27,7 @@ $(document).ready(function () {
     mobileFirst: true,
     appendArrows: $(`.content`),
     appendDots: $(`.content`),
-    fade:false,
+    fade:true,
     
   })
 });
