@@ -43,19 +43,32 @@
     display: block;
     width: 100%;
     margin-top: 32px;
-    padding: 10px 0 10px 0;
-    @extend %hoverColor;
+    padding: 10px;
+    color: var(--secondaryTextColor);
+    // @extend %hoverColor;
 
     text-align: center;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.66;
-    color: #ffffff;
+    line-height: 1.59;
     border: 1px solid;
     @extend %borderColor;
+
+    @media screen and (min-width: 1460px) {
+      width: 260px;
+      overflow: auto;
+    }
   }
 }
 .policy__flex-container {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 1460px) {
+    justify-content: space-around;
+  }
+}
+.policy__flex {
+  @media screen and (min-width: 1460px) {
+    display: flex;
+  }
 }

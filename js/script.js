@@ -11,7 +11,7 @@ $(document).ready(function () {
     autoplay: false,
     autoplaySpeed: 2500,
     pauseOnFocus: true,
-    pauseOnHover:true,
+    pauseOnHover: true,
     pauseOnDotsHover: true,
     draggable: true,
     swipe: true,
@@ -23,12 +23,14 @@ $(document).ready(function () {
     slidesPerRow: false,
     vertical: false,
     verticalSwiping: false,
-    responsive: [{ breakpoint: 1200, setting:{slidesToShow:1}
+    responsive: [{
+      breakpoint: 1200, setting: { slidesToShow: 1 }
     },],
     mobileFirst: true,
     appendArrows: $(`.content`),
     appendDots: $(`.content`),
-    fade:true,
+    fade: true,
     
-  })
+  });
+  $(`.slider`).slick(`setPosition`);
 });

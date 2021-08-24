@@ -1,10 +1,14 @@
+// data-lazy="" ленивая загрузка
+
 .slider__container {
-  @extend %mediaScreen;
+  width: 360px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slider {
   margin-top: 70px;
+  padding: 0 20px;
   position: relative;
   z-index: 3;
 

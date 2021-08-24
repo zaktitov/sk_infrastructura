@@ -180,10 +180,10 @@
     border: var(--secondaryTextColor) solid 1px;
     padding: 17px;
     color: var(--secondaryTextColor);
+
     background-color: transparent;
     transition: background-color var(--transition-duration)
-        var(--transition-timing-function),
-      color var(--transition-duration) var(--transition-timing-function);
+      var(--transition-timing-function);
     position: relative;
     z-index: 4;
 
