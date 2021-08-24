@@ -23,7 +23,8 @@ $(document).ready(function () {
     slidesPerRow: false,
     vertical: false,
     verticalSwiping: false,
-    responsive: [{},],
+    responsive: [{ breakpoint: 1200, setting:{slidesToShow:1}
+    },],
     mobileFirst: true,
     appendArrows: $(`.content`),
     appendDots: $(`.content`),
