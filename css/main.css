@@ -714,6 +714,7 @@ body.lock {
   color: var(--mainTextColor);
   background-color: var(--formInputColor);
   line-height: 1.2;
+  color: var(--secondaryTextColor);
 }
 
 .form__label-icon {
@@ -734,9 +735,24 @@ body.lock {
   background-color: var(--formInputColor);
 }
 
+.form__input::placeholder {
+  color: var(--secondaryTextColor);
+}
+
+.form__btn-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 50px;
+  width: 320px;
+  background-color: transparent;
+  border: 1px solid var(--secondaryTextColor);
+  color: var(--secondaryTextColor);
+}
+
 .form__policy-label {
   display: inline-block;
   text-decoration: line-through;
+  margin-bottom: 30px;
 }
 
 .form__policy-label::before {
@@ -744,7 +760,8 @@ body.lock {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: var(--hoverBgcBtns);
+  background-color: white;
+  border: 1px solid var(--hoverBgcBtns);
   margin-right: 8px;
 }
 
