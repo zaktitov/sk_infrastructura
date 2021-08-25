@@ -1,0 +1,78 @@
+.form {
+  &__feedback {
+    display: block;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--mainTextColor);
+    margin-bottom: 12px;
+  }
+
+  &__suptitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--mainTextColor);
+    margin-bottom: 25px;
+  }
+
+  &__field {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    /* or 156% */
+
+    color: #ffffff;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+
+    &.upload-files {
+      position: relative;
+      display: block;
+      width: 320px;
+      padding: 15px 25px;
+      color: var(--mainTextColor);
+      background-color: var(--formInputColor);
+      line-height: 1.2;
+    }
+
+    &-icon {
+      position: absolute;
+      right: 18px;
+      top: 16px;
+      width: 16px;
+      height: 16px;
+      color: var(--mainTextColor);
+    }
+  }
+
+  &__input {
+    display: block;
+    margin-bottom: 20px;
+    width: 320px;
+    padding: 15px 25px;
+
+    color: var(--mainTextColor);
+    background-color: var(--formInputColor);
+  }
+}
+
+.form__policy {
+  &-label {
+    display: inline-block;
+    text-decoration: line-through;
+  }
+
+  &-label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--hoverBgcBtns);
+    margin-right: 8px;
+  }
+}

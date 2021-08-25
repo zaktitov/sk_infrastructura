@@ -21,7 +21,7 @@
   }
 
   &__title {
-    @extend %titlePolicy;
+    @extend %h2;
     margin-bottom: 10px;
   }
 
