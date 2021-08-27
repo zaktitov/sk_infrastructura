@@ -52,23 +52,34 @@
     font-size: 18px;
     line-height: 1.59;
     border: 1px solid;
+    background-color: transparent;
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
     @extend %borderColor;
 
+    &:hover,
+    &:focus {
+      color: black;
+      background-color: var(--hoverBgcBtns);
+      border-color: var(--secondaryTextColor);
+    }
     @media screen and (min-width: 1460px) {
+      margin-left: 53px;
       width: 260px;
       overflow: auto;
     }
   }
-}
-.policy__flex-container {
-  display: flex;
-  flex-direction: column;
-  @media screen and (min-width: 1460px) {
-    justify-content: space-around;
-  }
-}
-.policy__flex {
-  @media screen and (min-width: 1460px) {
+  .policy__flex-container {
     display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    @media screen and (min-width: 1460px) {
+      justify-content: space-around;
+    }
+  }
+  .policy__flex {
+    @media screen and (min-width: 1460px) {
+      display: flex;
+    }
   }
 }

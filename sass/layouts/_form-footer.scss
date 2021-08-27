@@ -40,6 +40,14 @@
       line-height: 1.2;
       color: var(--secondaryTextColor);
       cursor: pointer;
+      border: 1px solid transparent;
+
+      transition: border-color var(--transition-duration)
+        var(--transition-timing-function);
+    }
+
+    &.upload-files:hover {
+      border-color: var(--secondaryTextColor);
     }
 
     &-icon {
@@ -48,7 +56,7 @@
       top: 16px;
       width: 16px;
       height: 16px;
-      color: var(--mainTextColor);
+      color: var(--secondaryTextColor);
     }
   }
 
@@ -57,9 +65,22 @@
     margin-bottom: 20px;
     width: 320px;
     padding: 15px 25px;
+    border: 1px solid transparent;
 
     color: var(--mainTextColor);
     background-color: var(--formInputColor);
+    transition: border-color var(--transition-duration)
+      var(--transition-timing-function);
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      border-color: var(--secondaryTextColor);
+    }
+
+    &:valid {
+      border-color: green;
+    }
 
     &::placeholder {
       color: var(--secondaryTextColor);

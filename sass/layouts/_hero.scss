@@ -16,12 +16,20 @@
 .hero {
   padding: 62px 0 62px 0px;
   background-color: slategray;
-  background: url(../images/hero/shield-pc-1x.svg) 75% 50% no-repeat,
-    url(../images/hero/hero-pc-1x.jpg);
-  background-size: 400px 520px, cover;
+  background: url(../images/hero/hero-pc-1x.jpg);
+  background-size: cover;
   @media screen and (max-width: 768px) {
     background-image: none;
     background-attachment: fixed;
+  }
+
+  &__ski-backgr {
+    display: inline-block;
+    margin-right: 0;
+    width: 394px;
+    height: 518px;
+    background: url(../images/hero/shield-pc-1x.svg) no-repeat center;
+    background-size: 400px 520px;
   }
 
   &__logo {

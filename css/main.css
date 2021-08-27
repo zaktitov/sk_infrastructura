@@ -145,10 +145,24 @@ body.lock {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1459px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1460px) {
   .clients__item {
     width: 486px;
     height: 390px;
+  }
+}
+
+@media screen and (max-width: 1459px) {
+  .clients__item {
+    width: 320px;
   }
 }
 
@@ -202,10 +216,11 @@ body.lock {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1459px) {
   .clients__content {
     transform: translateX(0);
     background-color: transparent;
+    width: 320px;
   }
 }
 
@@ -258,7 +273,7 @@ body.lock {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1459px) {
   .clients__text-pc {
     display: none;
   }
@@ -271,7 +286,7 @@ body.lock {
   transition: transform 250ms cubic-bezier(0.05, 0, 0.75, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1460px) {
   .clients__text-link {
     display: none;
   }
@@ -287,6 +302,18 @@ body.lock {
   line-height: 1.88;
   border: 1px solid #e4b564;
   transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__btn {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .clients__btn {
+    width: 180px;
+  }
 }
 
 .clients__btn:hover, .clients__btn:focus {
@@ -526,8 +553,8 @@ body.lock {
 .hero {
   padding: 62px 0 62px 0px;
   background-color: slategray;
-  background: url(../images/hero/shield-pc-1x.svg) 75% 50% no-repeat, url(../images/hero/hero-pc-1x.jpg);
-  background-size: 400px 520px, cover;
+  background: url(../images/hero/hero-pc-1x.jpg);
+  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -535,6 +562,15 @@ body.lock {
     background-image: none;
     background-attachment: fixed;
   }
+}
+
+.hero__ski-backgr {
+  display: inline-block;
+  margin-right: 0;
+  width: 394px;
+  height: 518px;
+  background: url(../images/hero/shield-pc-1x.svg) no-repeat center;
+  background-size: 400px 520px;
 }
 
 .hero__logo {
@@ -735,6 +771,12 @@ body.lock {
   line-height: 1.2;
   color: var(--secondaryTextColor);
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.form__label.upload-files:hover {
+  border-color: var(--secondaryTextColor);
 }
 
 .form__label-icon {
@@ -743,7 +785,7 @@ body.lock {
   top: 16px;
   width: 16px;
   height: 16px;
-  color: var(--mainTextColor);
+  color: var(--secondaryTextColor);
 }
 
 .form__input {
@@ -751,8 +793,18 @@ body.lock {
   margin-bottom: 20px;
   width: 320px;
   padding: 15px 25px;
+  border: 1px solid transparent;
   color: var(--mainTextColor);
   background-color: var(--formInputColor);
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.form__input:hover, .form__input:focus, .form__input:focus-within {
+  border-color: var(--secondaryTextColor);
+}
+
+.form__input:valid {
+  border-color: green;
 }
 
 .form__input::placeholder {
@@ -854,28 +906,38 @@ body.lock {
   font-size: 18px;
   line-height: 1.59;
   border: 1px solid;
+  background-color: transparent;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.policy .policy__btn-about-us:hover, .policy .policy__btn-about-us:focus {
+  color: black;
+  background-color: var(--hoverBgcBtns);
+  border-color: var(--secondaryTextColor);
 }
 
 @media screen and (min-width: 1460px) {
   .policy .policy__btn-about-us {
+    margin-left: 53px;
     width: 260px;
     overflow: auto;
   }
 }
 
-.policy__flex-container {
+.policy .policy__flex-container {
   display: flex;
   flex-direction: column;
+  flex: 0 0 50%;
 }
 
 @media screen and (min-width: 1460px) {
-  .policy__flex-container {
+  .policy .policy__flex-container {
     justify-content: space-around;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  .policy__flex {
+  .policy .policy__flex {
     display: flex;
   }
 }
