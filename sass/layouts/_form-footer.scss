@@ -23,7 +23,7 @@
     line-height: 1.6;
     /* or 156% */
 
-    color: #ffffff;
+    color: var(--mainTextColor);
   }
 
   &__label {
@@ -39,6 +39,7 @@
       background-color: var(--formInputColor);
       line-height: 1.2;
       color: var(--secondaryTextColor);
+      cursor: pointer;
     }
 
     &-icon {
@@ -73,23 +74,53 @@
     background-color: transparent;
     border: 1px solid var(--secondaryTextColor);
     color: var(--secondaryTextColor);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__btn-submit:hover,
+  &__btn-submit:focus {
+    color: black;
+    background-color: var(--hoverBgcBtns);
+    border-color: var(--formInputColor);
   }
 }
 
 .form__policy {
   &-label {
+    position: relative;
     display: inline-block;
     text-decoration: line-through;
     margin-bottom: 30px;
+    line-height: 1.8;
+    margin-left: 42px;
+    cursor: pointer;
   }
 
   &-label::before {
+    position: absolute;
+    top: 0;
+    left: -42px;
     content: "";
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: white;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
     border: 1px solid var(--hoverBgcBtns);
     margin-right: 8px;
+    background: transparent url(../images/icons/cross.svg) no-repeat center;
+    background-size: 13px 13px;
+  }
+
+  &-checkbox:checked,
+  &-checkbox:checked:focus + &-label::before {
+    background: var(--hoverBgcBtns) url(../images/footer/checkmark.svg)
+      no-repeat center;
+    background-size: 13px 13px;
+  }
+
+  &-checkbox:checked,
+  &-checkbox:checked:focus + &-label {
+    text-decoration: none;
   }
 }

@@ -175,5 +175,15 @@
     line-height: 1.88;
     @extend %hoverColor;
     border: 1px solid #e4b564;
+
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    color: black;
+    background-color: var(--hoverBgcBtns);
+    border-color: var(--formInputColor);
   }
 }

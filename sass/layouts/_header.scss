@@ -21,7 +21,7 @@
     width: 100%;
     margin: 0 auto;
     align-items: center;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
 
     @extend %mediaScreen;
   }
@@ -188,6 +188,9 @@
     z-index: 4;
 
     @media screen and (min-width: 1460px) {
+      display: flex;
+      align-items: center;
+
       margin-left: 36px;
       padding: 10px 25px;
     }
@@ -201,6 +204,7 @@
   }
 
   &__formBtn-span {
+    margin-left: 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.666;

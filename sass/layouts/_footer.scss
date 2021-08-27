@@ -1,7 +1,7 @@
 .footer.section {
   padding-top: 40px;
   padding-bottom: 0;
-  color: white;
+  color: var(--mainTextColor);
   background-color: var(--bgc);
 }
 
@@ -57,6 +57,7 @@
     }
 
     &-icon {
+      fill: var(--secondaryTextColor);
       margin-right: 10px;
 
       &.geo-icon {
@@ -64,6 +65,15 @@
         transform: translateY(25%);
       }
     }
+  }
+
+  &__background {
+    margin: 0 auto;
+    width: 360px;
+    height: 488px;
+    background: url(../images/icons/logo.svg) no-repeat 132px 125px,
+      url(../images/footer/russia-mob1x.svg) no-repeat;
+    background-size: 22px 28px, contain;
   }
 }
 

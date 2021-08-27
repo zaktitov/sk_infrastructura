@@ -286,6 +286,13 @@ body.lock {
   font-size: 15px;
   line-height: 1.88;
   border: 1px solid #e4b564;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.clients__btn:hover, .clients__btn:focus {
+  color: black;
+  background-color: var(--hoverBgcBtns);
+  border-color: var(--formInputColor);
 }
 
 .header {
@@ -312,7 +319,7 @@ body.lock {
   width: 100%;
   margin: 0 auto;
   align-items: center;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
 }
 
 .header__burger {
@@ -468,6 +475,8 @@ body.lock {
 
 @media screen and (min-width: 1460px) {
   .header__formBtn {
+    display: flex;
+    align-items: center;
     margin-left: 36px;
     padding: 10px 25px;
   }
@@ -480,6 +489,7 @@ body.lock {
 }
 
 .header__formBtn-span {
+  margin-left: 8px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.666;
@@ -599,7 +609,7 @@ body.lock {
 .footer.section {
   padding-top: 40px;
   padding-bottom: 0;
-  color: white;
+  color: var(--mainTextColor);
   background-color: var(--bgc);
 }
 
@@ -662,12 +672,21 @@ body.lock {
 }
 
 .footer__adress-icon {
+  fill: var(--secondaryTextColor);
   margin-right: 10px;
 }
 
 .footer__adress-icon.geo-icon {
   align-self: flex-start;
   transform: translateY(25%);
+}
+
+.footer__background {
+  margin: 0 auto;
+  width: 360px;
+  height: 488px;
+  background: url(../images/icons/logo.svg) no-repeat 132px 125px, url(../images/footer/russia-mob1x.svg) no-repeat;
+  background-size: 22px 28px, contain;
 }
 
 .icons-wrapper {
@@ -698,7 +717,7 @@ body.lock {
   font-size: 14px;
   line-height: 1.6;
   /* or 156% */
-  color: #ffffff;
+  color: var(--mainTextColor);
 }
 
 .form__label {
@@ -715,6 +734,7 @@ body.lock {
   background-color: var(--formInputColor);
   line-height: 1.2;
   color: var(--secondaryTextColor);
+  cursor: pointer;
 }
 
 .form__label-icon {
@@ -747,22 +767,49 @@ body.lock {
   background-color: transparent;
   border: 1px solid var(--secondaryTextColor);
   color: var(--secondaryTextColor);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.form__btn-submit:hover, .form__btn-submit:focus {
+  color: black;
+  background-color: var(--hoverBgcBtns);
+  border-color: var(--formInputColor);
 }
 
 .form__policy-label {
+  position: relative;
   display: inline-block;
   text-decoration: line-through;
   margin-bottom: 30px;
+  line-height: 1.8;
+  margin-left: 42px;
+  cursor: pointer;
 }
 
 .form__policy-label::before {
+  position: absolute;
+  top: 0;
+  left: -42px;
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: white;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
   border: 1px solid var(--hoverBgcBtns);
   margin-right: 8px;
+  background: transparent url(../images/icons/cross.svg) no-repeat center;
+  background-size: 13px 13px;
+}
+
+.form__policy-checkbox:checked,
+.form__policy-checkbox:checked:focus + .form__policy-label::before {
+  background: var(--hoverBgcBtns) url(../images/footer/checkmark.svg) no-repeat center;
+  background-size: 13px 13px;
+}
+
+.form__policy-checkbox:checked,
+.form__policy-checkbox:checked:focus + .form__policy-label {
+  text-decoration: none;
 }
 
 .policy__container {
@@ -834,14 +881,13 @@ body.lock {
 }
 
 .slider__container {
-  width: 360px;
+  width: 320px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .slider {
   margin-top: 70px;
-  padding: 0 20px;
   position: relative;
   z-index: 3;
 }
@@ -868,7 +914,7 @@ body.lock {
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  border: 1px solid #e4b564;
+  border: 1px solid var(--secondaryTextColor);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -879,7 +925,7 @@ body.lock {
 }
 
 .slick-arrow:hover.slick-prev {
-  background-color: #e4b564;
+  background-color: var(--secondaryTextColor);
 }
 
 /* Стрелка вправо */
@@ -889,8 +935,7 @@ body.lock {
 }
 
 .slick-arrow:hover.slick-next {
-  background-color: #e4b564;
-  color: aquamarine;
+  background-color: var(--secondaryTextColor);
 }
 
 /* Стрелка не активная */
