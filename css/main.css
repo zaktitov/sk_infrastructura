@@ -35,7 +35,7 @@ body {
   background-image: url(../images/hero/hero-pc-1x-jpg.);
   padding-top: 37px;
   background-color: var(--bgc);
-  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -109,27 +109,28 @@ body.lock {
   background-color: #0e0e0e;
 }
 
-.container {
+.clients__container {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (min-width: 360px) {
-  .container {
+  .clients__container {
     width: 360px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .clients__container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  .container {
-    width: 1500px;
+  .clients__container {
+    width: 1460px;
+    position: relative;
   }
 }
 
@@ -139,9 +140,9 @@ body.lock {
 
 @media screen and (min-width: 1460px) {
   .clients__list {
-    width: 1500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -155,8 +156,8 @@ body.lock {
 
 @media screen and (min-width: 1460px) {
   .clients__item {
-    width: 486px;
-    height: 390px;
+    width: 472px;
+    height: 360px;
   }
 }
 
@@ -313,6 +314,9 @@ body.lock {
 @media screen and (min-width: 1460px) {
   .clients__btn {
     width: 180px;
+    position: absolute;
+    top: -39px;
+    right: 20px;
   }
 }
 
@@ -550,6 +554,14 @@ body.lock {
   padding: 0px 20px;
 }
 
+.flex-container-one {
+  display: flex;
+}
+
+.flex-conttainer-three {
+  flex: 1 1 50%;
+}
+
 .hero {
   padding: 62px 0 62px 0px;
   background-color: slategray;
@@ -565,41 +577,78 @@ body.lock {
 }
 
 .hero__ski-backgr {
+  flex: 1 1 50%;
   display: inline-block;
-  margin-right: 0;
   width: 394px;
   height: 518px;
   background: url(../images/hero/shield-pc-1x.svg) no-repeat center;
   background-size: 400px 520px;
 }
 
-.hero__logo {
-  max-width: 320px;
+@media screen and (max-width: 1459px) {
+  .hero__ski-backgr {
+    display: none;
+  }
 }
 
 .hero__logo::before {
   content: "";
-  display: inline-block;
+  display: block;
   background-image: url(../images/icons/logo222.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 320px;
   height: 50px;
   margin-bottom: 55px;
+}
+
+@media screen and (min-width: 1460px) {
+  .hero__logo::before {
+    width: 500px;
+    height: 77px;
+  }
 }
 
 .hero__canDo-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__canDo-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .hero__canDo-item {
+  width: 225px;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.35;
   color: #ffffff;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__canDo-item:nth-child(1) {
+    order: 1;
+  }
+  .hero__canDo-item:nth-child(2) {
+    order: 2;
+  }
+  .hero__canDo-item:nth-child(3) {
+    order: 4;
+  }
+  .hero__canDo-item:nth-child(4) {
+    order: 5;
+  }
+  .hero__canDo-item:nth-child(5) {
+    order: 3;
+    margin-bottom: 36px;
+  }
 }
 
 .hero__canDo-item:not(:last-child) {
@@ -611,14 +660,28 @@ body.lock {
 }
 
 .hero__icon {
+  align-self: stretch;
   width: 40px;
   height: 40px;
   margin-right: 10px;
   flex: none;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .hero__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .hero__fullComp {
-  margin-top: 36px;
   margin-bottom: 23px;
   font-weight: 400;
   font-size: 24px;
@@ -649,27 +712,32 @@ body.lock {
   background-color: var(--bgc);
 }
 
-.container {
+.footer.footer .flex-footer {
+  flex: 1 1 60%;
+}
+
+.footer__container {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (min-width: 360px) {
-  .container {
+  .footer__container {
     width: 360px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .footer__container {
     width: 768px;
+    display: flex;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  .container {
-    width: 1500px;
+  .footer__container {
+    width: 1460px;
   }
 }
 
@@ -721,14 +789,81 @@ body.lock {
   margin: 0 auto;
   width: 360px;
   height: 488px;
-  background: url(../images/icons/logo.svg) no-repeat 132px 125px, url(../images/footer/russia-mob1x.svg) no-repeat;
-  background-size: 22px 28px, contain;
+  background: url(../images/icons/logo.svg) no-repeat 132px 130px, url(../images/footer/russia-pc1x.png) no-repeat left;
+  background-size: 22px 28px, cover;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__background {
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .footer__background {
+    flex: 1 1 59%;
+    width: 100%;
+    height: 888px;
+    background-position: 242px 241px, left;
+    background-size: 43px 58px, cover;
+  }
 }
 
 .icons-wrapper {
   margin: 0 auto;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1460px) {
+  .form__field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__field-name {
+    order: 1;
+    margin-right: 34px;
+  }
+  .form__field-number {
+    order: 2;
+  }
+  .form__field-upload {
+    order: 3;
+    margin-right: 34px;
+  }
+  .form__field-policy {
+    order: 5;
+    margin-top: 40px;
+  }
+  .form__field-submit {
+    order: 4;
+  }
+}
+
+.form__field-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 50px;
+  width: 320px;
+  background-color: transparent;
+  border: 1px solid var(--secondaryTextColor);
+  color: var(--secondaryTextColor);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+@media screen and (min-width: 1460px) {
+  .form__field-submit {
+    width: 340px;
+    padding: 21px 15px;
+    margin: 0;
+  }
+}
+
+.form__field-submit:hover, .form__field-submit:focus {
+  color: black;
+  background-color: var(--hoverBgcBtns);
+  border-color: var(--formInputColor);
 }
 
 .form__feedback {
@@ -748,14 +883,6 @@ body.lock {
   margin-bottom: 25px;
 }
 
-.form__field {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
-  /* or 156% */
-  color: var(--mainTextColor);
-}
-
 .form__label {
   display: block;
   margin-bottom: 10px;
@@ -773,6 +900,14 @@ body.lock {
   cursor: pointer;
   border: 1px solid transparent;
   transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+@media screen and (min-width: 1460px) {
+  .form__label.upload-files {
+    width: 340px;
+    padding: 21px 15px;
+    margin-bottom: 0px;
+  }
 }
 
 .form__label.upload-files:hover {
@@ -811,21 +946,11 @@ body.lock {
   color: var(--secondaryTextColor);
 }
 
-.form__btn-submit {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 50px;
-  width: 320px;
-  background-color: transparent;
-  border: 1px solid var(--secondaryTextColor);
-  color: var(--secondaryTextColor);
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
-}
-
-.form__btn-submit:hover, .form__btn-submit:focus {
-  color: black;
-  background-color: var(--hoverBgcBtns);
-  border-color: var(--formInputColor);
+@media screen and (min-width: 1460px) {
+  .form__input {
+    width: 340px;
+    padding: 21px 15px;
+  }
 }
 
 .form__policy-label {
@@ -892,7 +1017,17 @@ body.lock {
 }
 
 .policy__icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
   margin-right: 13px;
+}
+
+@media screen and (min-width: 1460px) {
+  .policy__icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .policy .policy__btn-about-us {
@@ -916,7 +1051,7 @@ body.lock {
   border-color: var(--secondaryTextColor);
 }
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 768px) {
   .policy .policy__btn-about-us {
     margin-left: 53px;
     width: 260px;
@@ -1063,13 +1198,13 @@ body.lock {
 }
 
 :root {
-  --bgc: #171717;
+  --bgc: #232323;
   --mainTextColor: #ffffff;
   --secondaryTextColor: #e4b564;
   --hoverTextcolor: black;
   --hoverBgcBtns: #e4b564;
   --formColor: black;
-  --formInputColor: #232323;
+  --formInputColor: #171717;
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1118,7 +1253,7 @@ body.lock {
 
 @media screen and (min-width: 1460px) {
   .header__container, .hero__container, .policy__container {
-    width: 1500px;
+    width: 1460px;
   }
 }
 
@@ -1128,12 +1263,6 @@ body.lock {
   font-size: 16px;
   line-height: 1.3;
   color: #ffffff;
-}
-
-.policy__icon {
-  width: 40px;
-  height: 40px;
-  flex: none;
 }
 
 .policy .policy__btn-about-us {

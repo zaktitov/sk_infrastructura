@@ -5,22 +5,27 @@
   background-color: var(--bgc);
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  @media screen and (min-width: 360px) {
-    width: 360px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1460px) {
-    width: 1500px;
-  }
+.footer.footer .flex-footer {
+  flex: 1 1 60%;
 }
 
 .footer {
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media screen and (min-width: 360px) {
+      width: 360px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      display: flex;
+    }
+    @media screen and (min-width: 1460px) {
+      width: 1460px;
+    }
+  }
+
   &__title {
     @extend %h2;
     margin-bottom: 30px;
@@ -71,9 +76,22 @@
     margin: 0 auto;
     width: 360px;
     height: 488px;
-    background: url(../images/icons/logo.svg) no-repeat 132px 125px,
-      url(../images/footer/russia-mob1x.svg) no-repeat;
-    background-size: 22px 28px, contain;
+    background: url(../images/icons/logo.svg) no-repeat 132px 130px,
+      url(../images/footer/russia-pc1x.png) no-repeat left;
+    background-size: 22px 28px, cover;
+
+    @media screen and (min-width: 768px) {
+      justify-self: center;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1460px) {
+      flex: 1 1 59%;
+      width: 100%;
+      height: 888px;
+      background-position: 242px 241px, left;
+      background-size: 43px 58px, cover;
+    }
   }
 }
 
@@ -82,3 +100,18 @@
   display: flex;
   align-items: center;
 }
+
+// @media (min-device-pixel-ratio: 1),
+//   (min-resolution: 192dpi) and (min-width: 1460px),
+//   (min-resolution: 2dppx) and (min-width: 1460px) {
+//   .footer__background {
+//     width: 100%;
+//     height: 500px;
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/footer/russia-pc1x.png);
+//   }
+// }

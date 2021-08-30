@@ -1,3 +1,54 @@
+.form__field {
+  @media screen and (min-width: 1460px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-name {
+      order: 1;
+      margin-right: 34px;
+    }
+    &-number {
+      order: 2;
+    }
+    &-upload {
+      order: 3;
+      margin-right: 34px;
+    }
+    &-policy {
+      order: 5;
+      margin-top: 40px;
+    }
+    &-submit {
+      order: 4;
+    }
+  }
+
+  &-submit {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 50px;
+    width: 320px;
+    background-color: transparent;
+    border: 1px solid var(--secondaryTextColor);
+    color: var(--secondaryTextColor);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+
+    @media screen and (min-width: 1460px) {
+      width: 340px;
+      padding: 21px 15px;
+      margin: 0;
+    }
+  }
+
+  &-submit:hover,
+  &-submit:focus {
+    color: black;
+    background-color: var(--hoverBgcBtns);
+    border-color: var(--formInputColor);
+  }
+}
+
 .form {
   &__feedback {
     display: block;
@@ -17,14 +68,15 @@
     margin-bottom: 25px;
   }
 
-  &__field {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6;
-    /* or 156% */
+  // &__field {
+  //   display: flex;
+  //   font-weight: 400;
+  //   font-size: 14px;
+  //   line-height: 1.6;
+  //   /* or 156% */
 
-    color: var(--mainTextColor);
-  }
+  //   color: var(--mainTextColor);
+  // }
 
   &__label {
     display: block;
@@ -44,6 +96,12 @@
 
       transition: border-color var(--transition-duration)
         var(--transition-timing-function);
+
+      @media screen and (min-width: 1460px) {
+        width: 340px;
+        padding: 21px 15px;
+        margin-bottom: 0px;
+      }
     }
 
     &.upload-files:hover {
@@ -85,25 +143,11 @@
     &::placeholder {
       color: var(--secondaryTextColor);
     }
-  }
 
-  &__btn-submit {
-    display: block;
-    margin: 0 auto;
-    padding: 20px 50px;
-    width: 320px;
-    background-color: transparent;
-    border: 1px solid var(--secondaryTextColor);
-    color: var(--secondaryTextColor);
-    transition: background-color var(--transition-duration)
-      var(--transition-timing-function);
-  }
-
-  &__btn-submit:hover,
-  &__btn-submit:focus {
-    color: black;
-    background-color: var(--hoverBgcBtns);
-    border-color: var(--formInputColor);
+    @media screen and (min-width: 1460px) {
+      width: 340px;
+      padding: 21px 15px;
+    }
   }
 }
 

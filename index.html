@@ -8,7 +8,9 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -73,54 +75,64 @@
         <!-- !=====MAIN===== -->
         <main class="main">
             <section class="hero">
-                <div class="hero__container">
-                    <h1 class="hero__logo">
-                        <span class="visually-hidden">Строительная компания "Инфраструктура"</span>
-                    </h1>
-                    <!-- !first list -->
-                    <ul class="hero__canDo-list">
-                        <li class="hero__canDo-item">
-                            <svg class="hero__icon">
-                                <use href="./images/icons/sprite.svg#kranik"></use>
-                            </svg>
-                            Монтаж сетей водоснабжения
-                        </li>
-                        <li class="hero__canDo-item">
-                            <svg class="hero__icon icon">
-                                <use href="./images/icons/sprite.svg#truba"></use>
-                            </svg>
-                            Водоотведение и канализация
-                        </li>
-                        <li class="hero__canDo-item">
-                            <svg class="hero__icon icon">
-                                <use href="./images/icons/sprite.svg#beton-block"></use>
-                            </svg>
-                            Монтаж Ж/Б конструкций
-                        </li>
-                        <li class="hero__canDo-item">
-                            <svg class="hero__icon icon">
-                                <use href="./images/icons/sprite.svg#derevo"></use>
-                            </svg>
-                            Благоустройство территории
-                        </li>
-                        <li class="hero__canDo-item">
-                            <svg class="hero__icon icon">
-                                <use href="./images/icons/sprite.svg#radiator"></use>
-                            </svg>
-                            Наружные тепловые сети и тепловые пункты
-                        </li>
-                    </ul>
 
-                    <div class="hero__ski-backgr"></div>
+                <div class="hero__container">
+                    <h1 class="hero__logo"></h1>
+                    <div class="flex-container-one">
+                        <h2 class="visually-hidden">Строительная компания "Инфраструктура"</h2>
+                        <!-- !first list -->
+                        <div class="flex-container-three">
+                            <ul class="hero__canDo-list">
+                                <li class="hero__canDo-item">
+                                    <svg class="hero__icon">
+                                        <use href="./images/icons/sprite.svg#kranik"></use>
+                                    </svg>
+                                    <p>Монтаж сетей водоснабжения</p>
+                                </li>
+                                <li class="hero__canDo-item">
+                                    <svg class="hero__icon icon">
+                                        <use href="./images/icons/sprite.svg#truba"></use>
+                                    </svg>
+                                    <p>Водоотведение и канализация</p>
+                                </li>
+                                <li class="hero__canDo-item">
+                                    <svg class="hero__icon icon">
+                                        <use href="./images/icons/sprite.svg#beton-block"></use>
+                                    </svg>
+                                    <p>Монтаж Ж/Б конструкций</p>
+                                </li>
+                                <li class="hero__canDo-item">
+                                    <svg class="hero__icon icon">
+                                        <use href="./images/icons/sprite.svg#derevo"></use>
+                                    </svg>
+                                    <p>Благоустройство территории</p>
+                                </li>
+                                <li class="hero__canDo-item">
+                                    <svg class="hero__icon icon">
+                                        <use href="./images/icons/sprite.svg#radiator"></use>
+                                    </svg>
+                                    <p>Наружные тепловые сети и тепловые пункты</p>
+                                </li>
+                            </ul>
+
+                            <div class="cont2">
+
+                                <h2 class="hero__fullComp">Полный комплекс работ:</h2>
+                                <ul class="hero__fullComp-list">
+                                    <li class="hero__fullComp-item">проектирование</li>
+                                    <li class="hero__fullComp-item">согласование</li>
+                                    <li class="hero__fullComp-item">строительно-монтажные работы</li>
+                                    <li class="hero__fullComp-item">пусконаладочные работы</li>
+                                    <li class="hero__fullComp-item">сервисное обслуживание</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="hero__ski-backgr"></div>
+                    </div>
+
                     <!-- !SECOND LIST -->
-                    <h2 class="hero__fullComp">Полный комплекс работ:</h2>
-                    <ul class="hero__fullComp-list">
-                        <li class="hero__fullComp-item">проектирование</li>
-                        <li class="hero__fullComp-item">согласование</li>
-                        <li class="hero__fullComp-item">строительно-монтажные работы</li>
-                        <li class="hero__fullComp-item">пусконаладочные работы</li>
-                        <li class="hero__fullComp-item">сервисное обслуживание</li>
-                    </ul>
                 </div>
             </section>
 
@@ -177,7 +189,7 @@
                             <div class="slider">
                                 <!-- 1 -->
                                 <div class="slider__item">
-                                    <img src="./images/machines/machinery_img1.png" alt="" class="slider__img">
+                                    <img src="./images/machines/machinery_img-pc.png" alt="" class="slider__img">
                                 </div>
                                 <!-- 2 -->
                                 <div class="slider__item">
@@ -189,7 +201,7 @@
                                 </div>
                                 <!-- 4 -->
                                 <div class="slider__item">
-                                    <img src="./images/machines/machinery_img1.png" alt="" class="slider__img">
+                                    <img src="./images/machines/machinery_img-pc.png" alt="" class="slider__img">
                                 </div>
                                 <!-- 5 -->
                                 <div class="slider__item">
@@ -208,7 +220,7 @@
 
             <!--================CLIENTS SECTION================  -->
             <section class="clients section">
-                <div class="clients container">
+                <div class="clients clients__container">
                     <h2 class="clients__title">Наши клиенты <br>и проекты</h2>
 
                     <ul class="clients__list">
@@ -321,14 +333,11 @@
                             <a href="" class="clients__link">
                                 <div class="clients__thumb">
                                     <picture>
-                                        <source srcset="./images/clients/one.jpg 1x, ./images/clients/one-2x.jpg 2x"
-                                            media="(max-width:1400px)">
                                         <source
                                             srcset="./images/clients/iamge-pc.jpg 1x, ./images/clients/img2xpc.jpg 2x"
-                                            media="(min-width:1460px)">
-
-
-
+                                            media="(min-width:1400px)">
+                                        <source srcset="./images/clients/five.jpg 1x, ./images/clients/one-2x.jpg 2x"
+                                            media="(max-width:2000px)">
                                         <img src="ssda" alt="photo">
                                     </picture>
 
@@ -381,84 +390,94 @@
 
         <!-- !======FOOTER====== -->
         <footer class="footer section">
-            <div class="footer container">
-                <h2 class="footer__title">Работаем по всей России</h2>
-                <h3 class="footer__subtitle">Офис в Санкт-Петербурге:</h3>
+            <div class="footer footer__container">
+                <div class="flex-footer">
+                    <h2 class="footer__title">Работаем по всей России</h2>
+                    <h3 class="footer__subtitle">Офис в Санкт-Петербурге:</h3>
 
-                <adress class="footer__adress">
-                    <ul class="footer__adress-list">
-                        <li class="footer__adress-item">
-                            <div class="icons-wrapper">
-                                <svg class="footer__adress-icon" width="16" height="16">
-                                    <use href="./images/icons/sprite.svg#phone"></use>
-                                </svg>
-                                <a href="tel:+78124382635" class="footer__adress-link tel">+7 (812) 438-26-35</a>
+                    <adress class="footer__adress">
+                        <ul class="footer__adress-list">
+                            <li class="footer__adress-item">
+                                <div class="icons-wrapper">
+                                    <svg class="footer__adress-icon" width="16" height="16">
+                                        <use href="./images/icons/sprite.svg#phone"></use>
+                                    </svg>
+                                    <a href="tel:+78124382635" class="footer__adress-link tel">+7 (812) 438-26-35</a>
+                                </div>
+
+                            </li>
+                            <li class="footer__adress-item">
+                                <div class="icons-wrapper">
+                                    <svg class="footer__adress-icon" width="16" height="16">
+                                        <use href="./images/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                    <a href="mailto:info@skinfra.ru"
+                                        class="footer__adress-link mailto">info@skinfra.ru</a>
+                                </div>
+
+                            </li>
+                            <li class="footer__adress-item">
+                                <div class="icons-wrapper">
+                                    <svg class="footer__adress-icon geo-icon" width="16" height="16">
+                                        <use href="./images/icons/sprite.svg#location"></use>
+                                    </svg>
+                                    <a href="" class="footer__adress-link geolocation">195197, Санкт-Петербург,<br>
+                                        Кондратьевский пр., д.
+                                        15,<br> к. 2, л.
+                                        З,офис 204 БЦ "Фернан<br> Леже"</a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </adress>
+
+                    <!-- !=========FORM========== -->
+                    <form action="" class="form js-speaker-form" autocomplete="off">
+                        <b class="form__feedback">Свяжитесь с нами</b>
+                        <p class="form__suptitle">Задайте вопрос, пришлите<br> коммерческое предложение или пригласите
+                            на тендер
+                        </p>
+
+                        <div class="form__field">
+
+                            <div class="form__field-name">
+                                <label class="form__label" for="name">Представьтесь, пожалуйста*</label>
+                                <input class="form__input" type="text" name="user-name" id="name" placeholder="Ваше имя"
+                                    required minlength="3">
                             </div>
 
-                        </li>
-                        <li class="footer__adress-item">
-                            <div class="icons-wrapper">
-                                <svg class="footer__adress-icon" width="16" height="16">
-                                    <use href="./images/icons/sprite.svg#mail"></use>
-                                </svg>
-                                <a href="mailto:info@skinfra.ru" class="footer__adress-link mailto">info@skinfra.ru</a>
+                            <div class="form__field-number">
+                                <label class="form__label" for="phone">Ваш номер телефона</label>
+                                <input class="form__input" type="tel" name="user-phone-number" id="phone"
+                                    placeholder="+7 (___) ___-__-__" required>
                             </div>
 
-                        </li>
-                        <li class="footer__adress-item">
-                            <div class="icons-wrapper">
-                                <svg class="footer__adress-icon geo-icon" width="16" height="16">
-                                    <use href="./images/icons/sprite.svg#location"></use>
-                                </svg>
-                                <a href="" class="footer__adress-link geolocation">195197, Санкт-Петербург,<br>
-                                    Кондратьевский пр., д.
-                                    15,<br> к. 2, л.
-                                    З,офис 204 БЦ "Фернан<br> Леже"</a>
+                            <div class="form__field-upload">
+                                <label class="form__label upload-files" for="pdf">Загрузить файл
+                                    <svg class="form__label-icon">
+                                        <use href="./images/icons/sprite.svg#upload"></use>
+                                    </svg>
+                                </label>
+                                <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
                             </div>
 
-                        </li>
-                    </ul>
-                </adress>
-                <!-- !=========FORM========== -->
+                            <div class="form__field-policy">
+                                <input class="form__policy-checkbox visually-hidden" type="checkbox" name="policy"
+                                    id="policy">
+                                <label class="form__policy-label" for="policy">Я соглашаюсь с политикой
+                                    конфиденциальности
+                                </label>
+                            </div>
 
-                <form action="" class="form js-speaker-form" autocomplete="off">
-                    <b class="form__feedback">Свяжитесь с нами</b>
-                    <p class="form__suptitle">Задайте вопрос, пришлите<br> коммерческое предложение или пригласите
-                        на тендер
-                    </p>
+                            <button class="form__field-submit" type="submit">Перезвоните мне</button>
+                        </div>
+                    </form>
+                </div>
 
-                    <div class="form__field">
-                        <label class="form__label" for="name">Представьтесь, пожалуйста*</label>
-                        <input class="form__input" type="text" name="user-name" id="name" placeholder="Ваше имя"
-                            autofocus required minlength="3">
-                    </div>
+                <div class="footer__background "></div>
 
-                    <div class="form__field">
-                        <label class="form__label" for="phone">Ваш номер телефона</label>
-                        <input class="form__input" type="tel" name="user-phone-number" id="phone"
-                            placeholder="+7 (___) ___-__-__" required>
-                    </div>
-
-                    <div class="form__field">
-                        <label class="form__label upload-files" for="pdf">Загрузить файл
-                            <svg class="form__label-icon">
-                                <use href="./images/icons/sprite.svg#upload"></use>
-                            </svg>
-                        </label>
-                        <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
-                    </div>
-
-                    <div class="">
-                        <input class="form__policy-checkbox visually-hidden" type="checkbox" name="policy" id="policy">
-                        <label class="form__policy-label" for="policy">Я соглашаюсь с политикой
-                            конфиденциальности
-                        </label>
-                    </div>
-
-                    <button class="form__btn-submit" type="submit">Перезвоните мне</button>
-                </form>
             </div>
-            <div class="footer__background "></div>
+
         </footer>
     </div>
 

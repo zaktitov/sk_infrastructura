@@ -35,8 +35,14 @@
   }
 
   &__icon {
-    @extend %iconParam;
+    flex: none;
+    width: 40px;
+    height: 40px;
     margin-right: 13px;
+    @media screen and (min-width: 1460px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .policy__btn-about-us {
@@ -63,7 +69,8 @@
       background-color: var(--hoverBgcBtns);
       border-color: var(--secondaryTextColor);
     }
-    @media screen and (min-width: 1460px) {
+
+    @media screen and (min-width: 768px) {
       margin-left: 53px;
       width: 260px;
       overflow: auto;
