@@ -60,7 +60,7 @@
     }
   }
 
-  &__canDo-list {
+  &__can-do-list {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
@@ -71,7 +71,7 @@
     }
   }
 
-  &__canDo-item {
+  &__can-do-item {
     width: 225px;
     font-weight: 400;
     font-size: 17px;
@@ -100,11 +100,11 @@
     }
   }
 
-  &__canDo-item:not(:last-child) {
+  &__can-do-item:not(:last-child) {
     margin-bottom: 36px;
   }
 
-  &__canDo-item:last-child {
+  &__can-do-item:last-child {
     display: inline-flex;
   }
 
@@ -128,7 +128,7 @@
 
   // ==========second list
 
-  &__fullComp {
+  &__full-comp {
     margin-bottom: 23px;
 
     font-weight: 400;

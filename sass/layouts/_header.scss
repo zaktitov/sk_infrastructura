@@ -148,7 +148,7 @@
     line-height: 1.6;
   }
 
-  &__mobNumber {
+  &__mob-number {
     margin-left: auto;
     color: var(--mainTextColor);
     font-weight: bold;
@@ -164,16 +164,16 @@
     }
   }
 
-  &__mobNumber:hover,
-  &__mobNumber:focus {
+  &__mob-number:hover,
+  &__mob-number:focus {
     transform: scale(1.05);
   }
 
-  &__mobNumber-color {
+  &__mob-number-color {
     color: var(--secondaryTextColor);
   }
 
-  &__formBtn {
+  &__form-btn {
     margin-left: 20px;
     min-height: 50px;
     min-width: 50px;
@@ -196,14 +196,14 @@
     }
   }
 
-  &__formBtn:hover,
-  &__formBtn:focus {
+  &__form-btn:hover,
+  &__form-btn:focus {
     color: black;
     background-color: var(--hoverBgcBtns);
     border-color: var(--formInputColor);
   }
 
-  &__formBtn-span {
+  &__form-btn-span {
     margin-left: 8px;
     font-weight: 400;
     font-size: 18px;
@@ -218,7 +218,7 @@
     }
   }
 
-  &__formBtn:hover &__formBtn-span {
+  &__form-btn:hover &__form-btn-span {
     color: currentColor;
   }
 
