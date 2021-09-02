@@ -23,13 +23,12 @@
 
 .hero {
   padding: 62px 0 62px 0px;
-  background-color: slategray;
-  background: url(../images/hero/hero-pc-1x.jpg);
-  background-size: cover;
-  @media screen and (max-width: 768px) {
-    background-image: none;
-    background-attachment: fixed;
-  }
+  // background: url(../images/hero/hero-pc-1x.jpg);
+  // background-size: cover;
+  // @media screen and (max-width: 768px) {
+  //   background-image: none;
+  //   background-attachment: fixed;
+  // }
 
   &__ski-backgr {
     flex: 1 1 50%;
@@ -50,7 +49,6 @@
     background-image: url(../images/icons/logo222.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 320px;
     height: 50px;
     margin-bottom: 55px;
 
@@ -76,9 +74,9 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 1.35;
-    color: #ffffff;
     display: flex;
     align-items: center;
+    color: white;
 
     @media screen and (min-width: 768px) {
       &:nth-child(1) {
@@ -134,12 +132,17 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 1.16;
-    color: #ffffff;
+    color: var(--mainTextColor);
 
     &-list {
       font-size: 19px;
       line-height: 1.57;
       font-weight: 400;
+      color: var(--mainTextColor);
+    }
+
+    &-item{
+      color: var(--mainTextColor);
     }
 
     &-item::before {

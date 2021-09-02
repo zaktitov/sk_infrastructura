@@ -1,0 +1,72 @@
+// .page {
+// position: fixed;
+// top: 0;
+// left: 0;
+// width: 100%;
+// height: 100%;
+// overflow: hidden;
+
+// 		&__wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       width: 100%;
+//       height: 100%;
+// 		}
+
+// 		&__screen {
+//       flex: 1 0 auto;
+// 		}
+// }
+// .screen {
+
+// 		&__content {
+//       padding: 0 20px 0 20px;
+//       position: relative;
+//       z-index: 2;
+//     }
+
+// 		&__body {
+//       position: absolute;
+//       width:100%;
+//       height:100%;
+//       overflow: hidden;
+//       top: 0;
+//       left: 0;
+      
+// 		}
+//     &__img{
+//       object-fit: cover;
+//       position: absolute;
+//       width:100%;
+//       height:100%;
+//       top: 0;
+//       left: 0;
+//       z-index: 10;
+
+//     }
+
+    .screen{
+       background-color: #0e0e0e;
+      @media screen and (min-width:1460px){ 
+min-height: 100vh;
+  background: url(../images/hero/hero-pc-1x.jpg);
+  background-size: cover;
+}
+
+ &-two{
+    background-color: var(--bgc);
+    min-height: 100vh;
+ }
+
+ &-three{
+    background-color: #0e0e0e;;
+    min-height: 100vh;
+ }
+
+ &-four{
+    background-color: var(--bgc);
+    min-height: 100vh;
+ }
+
+
+}

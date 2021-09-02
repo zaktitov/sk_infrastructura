@@ -28,12 +28,9 @@ aside {
 
 html,
 body {
-  background-image: url(../images/hero/hero-pc-1x-jpg.);
-  padding-top: 37px;
+  // padding-top: 37px;
   background-color: var(--bgc);
   font-family: Roboto, Arial, Helvetica, sans-serif;
-
-  // font-family: Lato, Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -93,4 +90,9 @@ body.lock {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width:1460px){
+    min-height: 100vh;
+  }
+  
 }

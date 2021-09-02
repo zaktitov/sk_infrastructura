@@ -13,6 +13,11 @@
     font-size: 30px;
     line-height: 0.93;
     color: #ffffff;
+
+    @media screen and (min-width:1460px){
+      margin-bottom: 0;
+    }
+    
   }
 
   &__wrapper {
@@ -75,12 +80,18 @@
       width: 260px;
       overflow: auto;
     }
+
+    @media screen and (min-width:1460px){
+      margin-top: 0;
+    }
+    
   }
   .policy__flex-container {
     display: flex;
     flex-direction: column;
     flex: 0 0 50%;
     @media screen and (min-width: 1460px) {
+      padding: 120px 0;
       justify-content: space-around;
     }
   }

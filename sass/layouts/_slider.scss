@@ -1,7 +1,7 @@
 // data-lazy="" ленивая загрузка
 
 .slider__container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -110,8 +110,7 @@
 .content {
   margin: 0 auto;
   padding: 20px 30px;
-  width: 320px;
-  height: 170px;
+  height: 170px;  
   position: relative;
   display: flex;
   flex-direction: column;

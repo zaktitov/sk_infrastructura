@@ -32,8 +32,6 @@ aside {
 
 html,
 body {
-  background-image: url(../images/hero/hero-pc-1x-jpg.);
-  padding-top: 37px;
   background-color: var(--bgc);
   font-family: Roboto, Arial, Helvetica, sans-serif;
   height: 100%;
@@ -104,6 +102,12 @@ body.lock {
   flex-direction: column;
 }
 
+@media screen and (min-width: 1460px) {
+  .wrapper {
+    min-height: 100vh;
+  }
+}
+
 .section {
   padding: 64px 0;
   background-color: #0e0e0e;
@@ -161,12 +165,6 @@ body.lock {
   }
 }
 
-@media screen and (max-width: 1459px) {
-  .clients__item {
-    width: 320px;
-  }
-}
-
 .clients__link {
   display: block;
   position: relative;
@@ -221,7 +219,6 @@ body.lock {
   .clients__content {
     transform: translateX(0);
     background-color: transparent;
-    width: 320px;
   }
 }
 
@@ -326,31 +323,31 @@ body.lock {
   border-color: var(--formInputColor);
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bgc);
-  z-index: 3;
-}
-
 .header__container {
   display: flex;
   width: 100%;
   margin: 0 auto;
   align-items: center;
   padding: 10px 20px;
+}
+
+@media screen and (min-width: 360px) {
+  .header__container {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .header__container {
+    width: 1460px;
+    padding: 40px 20px 40px 20px;
+  }
 }
 
 .header__burger {
@@ -564,16 +561,6 @@ body.lock {
 
 .hero {
   padding: 62px 0 62px 0px;
-  background-color: slategray;
-  background: url(../images/hero/hero-pc-1x.jpg);
-  background-size: cover;
-}
-
-@media screen and (max-width: 768px) {
-  .hero {
-    background-image: none;
-    background-attachment: fixed;
-  }
 }
 
 .hero__ski-backgr {
@@ -597,7 +584,6 @@ body.lock {
   background-image: url(../images/icons/logo222.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 320px;
   height: 50px;
   margin-bottom: 55px;
 }
@@ -627,9 +613,9 @@ body.lock {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.35;
-  color: #ffffff;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -686,13 +672,18 @@ body.lock {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.16;
-  color: #ffffff;
+  color: var(--mainTextColor);
 }
 
 .hero__full-comp-list {
   font-size: 19px;
   line-height: 1.57;
   font-weight: 400;
+  color: var(--mainTextColor);
+}
+
+.hero__full-comp-item {
+  color: var(--mainTextColor);
 }
 
 .hero__full-comp-item::before {
@@ -787,23 +778,15 @@ body.lock {
 
 .footer__background {
   margin: 0 auto;
-  width: 360px;
+  width: 100%;
   height: 488px;
   background: url(../images/icons/logo.svg) no-repeat 132px 130px, url(../images/footer/russia-pc1x.png) no-repeat left;
   background-size: 22px 28px, cover;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__background {
-    justify-self: center;
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1460px) {
   .footer__background {
     flex: 1 1 59%;
-    width: 100%;
     height: 888px;
     background-position: 242px 241px, left;
     background-size: 43px 58px, cover;
@@ -845,7 +828,7 @@ body.lock {
   display: block;
   margin: 0 auto;
   padding: 20px 50px;
-  width: 320px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid var(--secondaryTextColor);
   color: var(--secondaryTextColor);
@@ -891,7 +874,7 @@ body.lock {
 .form__label.upload-files {
   position: relative;
   display: block;
-  width: 320px;
+  width: 100%;
   padding: 15px 25px;
   color: var(--mainTextColor);
   background-color: var(--formInputColor);
@@ -926,7 +909,7 @@ body.lock {
 .form__input {
   display: block;
   margin-bottom: 20px;
-  width: 320px;
+  width: 100%;
   padding: 15px 25px;
   border: 1px solid transparent;
   color: var(--mainTextColor);
@@ -1002,6 +985,12 @@ body.lock {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1460px) {
+  .policy__heading {
+    margin-bottom: 0;
+  }
+}
+
 .policy__wrapper {
   display: inline-flex;
   margin-top: 25px;
@@ -1059,6 +1048,12 @@ body.lock {
   }
 }
 
+@media screen and (min-width: 1460px) {
+  .policy .policy__btn-about-us {
+    margin-top: 0;
+  }
+}
+
 .policy .policy__flex-container {
   display: flex;
   flex-direction: column;
@@ -1067,6 +1062,7 @@ body.lock {
 
 @media screen and (min-width: 1460px) {
   .policy .policy__flex-container {
+    padding: 120px 0;
     justify-content: space-around;
   }
 }
@@ -1078,7 +1074,7 @@ body.lock {
 }
 
 .slider__container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1170,7 +1166,6 @@ body.lock {
 .content {
   margin: 0 auto;
   padding: 20px 30px;
-  width: 320px;
   height: 170px;
   position: relative;
   display: flex;
@@ -1195,6 +1190,33 @@ body.lock {
   color: #ffffff;
   margin-bottom: 30px;
   letter-spacing: 0.1em;
+}
+
+.screen {
+  background-color: #0e0e0e;
+}
+
+@media screen and (min-width: 1460px) {
+  .screen {
+    min-height: 100vh;
+    background: url(../images/hero/hero-pc-1x.jpg);
+    background-size: cover;
+  }
+}
+
+.screen-two {
+  background-color: var(--bgc);
+  min-height: 100vh;
+}
+
+.screen-three {
+  background-color: #0e0e0e;
+  min-height: 100vh;
+}
+
+.screen-four {
+  background-color: var(--bgc);
+  min-height: 100vh;
 }
 
 :root {
@@ -1240,19 +1262,19 @@ body.lock {
 }
 
 @media screen and (min-width: 360px) {
-  .header__container, .hero__container, .policy__container {
+  .hero__container, .policy__container {
     width: 360px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header__container, .hero__container, .policy__container {
+  .hero__container, .policy__container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1460px) {
-  .header__container, .hero__container, .policy__container {
+  .hero__container, .policy__container {
     width: 1460px;
   }
 }

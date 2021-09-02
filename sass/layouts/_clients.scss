@@ -47,9 +47,9 @@
       height: 360px;
     }
 
-    @media screen and (max-width: 1459px) {
-      width: 320px;
-    }
+    // @media screen and (max-width: 1459px) {
+    //   width: 320px;
+    // }
   }
 
   &__link {
@@ -100,7 +100,6 @@
     @media screen and (max-width: 1459px) {
       transform: translateX(0);
       background-color: transparent;
-      width: 320px;
     }
 
     width: 100%;
