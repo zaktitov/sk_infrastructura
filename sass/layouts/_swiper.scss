@@ -47,11 +47,23 @@
 
     .screen{
        background-color: #0e0e0e;
+
+
       @media screen and (min-width:1460px){ 
 min-height: 100vh;
   background: url(../images/hero/hero-pc-1x.jpg);
   background-size: cover;
-}
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) 
+  {
+     background-image: url(../images/hero/hero-pc-2x.jpg);
+  }
+      }
+
+  
 
  &-two{
     background-color: var(--bgc);
@@ -66,7 +78,24 @@ min-height: 100vh;
  &-four{
     background-color: var(--bgc);
     min-height: 100vh;
+   //  background: url(../images/icons/logo.svg) no-repeat 132px 130px,
+   //    url(../images/footer/russia-pc1x.png) no-repeat;
+   //    background-position: 242px 241px, right;
+   //    background-size: 43px 58px, contain;
+
+     @media screen and (min-width: 1460px) {
+        background: 
+      url(../images/footer/russia-pc1x.png) no-repeat right;
+      background-size: 49%;
+
+
+      // url(../images/icons/logo.svg) no-repeat 132px 130px,
+      // 242px 241px,
+      // 43px 58px,
+
+   
  }
+}
 
 
 }

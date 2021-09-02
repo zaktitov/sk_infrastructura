@@ -23,6 +23,9 @@
 
 .hero {
   padding: 62px 0 62px 0px;
+  
+
+  
   // background: url(../images/hero/hero-pc-1x.jpg);
   // background-size: cover;
   // @media screen and (max-width: 768px) {
@@ -35,8 +38,9 @@
     display: inline-block;
     width: 394px;
     height: 518px;
-    background: url(../images/hero/shield-pc-1x.svg) no-repeat center;
+    background: url(../images/hero/shield-pc-1x.svg) no-repeat;
     background-size: 400px 520px;
+    background-position: center;
 
     @media screen and (max-width: 1459px) {
       display: none;

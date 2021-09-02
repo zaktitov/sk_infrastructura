@@ -6,7 +6,7 @@
 }
 
 .footer.footer .flex-footer {
-  flex: 1 1 60%;
+  flex: 0 1 60%;
 }
 
 .footer {
@@ -73,18 +73,31 @@
   }
 
   &__background {
-    margin: 0 auto;
+    margin: 0 auto;  
     width: 100%;
     height: 488px;
     background: url(../images/icons/logo.svg) no-repeat 132px 130px,
       url(../images/footer/russia-pc1x.png) no-repeat left;
     background-size: 22px 28px, cover;
 
+    @media screen and (min-width:360px){
+      width: 360px;
+      
+    }
+
+    @media screen and (min-width:768px){
+      width: 768px;
+      background-size: 22px 28px, contain;
+    }
+    
+    
+
     @media screen and (min-width: 1460px) {
+      display: none;
       flex: 1 1 59%;
       height: 888px;
       background-position: 242px 241px, left;
-      background-size: 43px 58px, cover;
+      background-size: 43px 58px, contain;
     }
   }
 }
