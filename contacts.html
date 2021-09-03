@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
+</head>
+<main class="contacts">
+    <div class="contacts__content">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Главная
+                            </a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Компания</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Вакансии</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="little">Услуги</span></a>
+                        </li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="header__span-little">Сети
+                                    водоснабжения</span></a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="header__span-little">Водоотведение и
+                                    канализация</span></a>
+                        </li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="header__span-little">Наружные
+                                    тепловые сети</span></a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="header__span-little">Монтаж
+                                    Ж/Б
+                                    конструкций</span></a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="header__span-little">Благоустройство территорий</span></a>
+                        </li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Проекты</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Контакты</a></li>
+                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+                                    class="header__span-little">Политика
+                                    конфиденциальности</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="" class="header__logo-link">
+                    <svg class="header__logo-icon">
+                        <use href="./images/icons/sprite.svg#logo"></use>
+                    </svg> <span class="header__logo-text">СК Инфраструктура</span></a>
+                <a class="header__mob-number" href="tel:+7(812)4016495"><span class="header__mob-number-color">+7
+                        (812)</span> 401-64-95</a>
+
+                <a class="header__form-btn" href="">
+                    <svg class="header__icon-phone" width="16" height="16">
+                        <use href="./images/icons/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="header__form-btn-span">Обратный звонок</span>
+                </a>
+            </div>
+        </header>
+
+        <section class="current-page">
+            <div class="current-page__container">
+                <a href="./index.html" class="current-page__link">
+                    <p class="current-page__text">Главная</p>
+                </a>
+                <a href="" class="current-page__link">
+                    <p class="current-page__text is-active">Контакты</p>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- !======FOOTER====== -->
+        <footer class="footer section__contacts">
+            <div class="footer footer__container">
+                <div class="flex-footer">
+                    <h2 class="footer__title footer__title-contacts">Контакты</h2>
+                    <h3 class="footer__subtitle">Офис в Санкт-Петербурге:</h3>
+
+                    <adress class="footer__adress">
+                        <ul class="footer__adress-list">
+                            <li class="footer__adress-item">
+                                <div class="icons-wrapper">
+                                    <svg class="footer__adress-icon" width="16" height="16">
+                                        <use href="./images/icons/sprite.svg#phone"></use>
+                                    </svg>
+                                    <a href="tel:+78124382635" class="footer__adress-link tel">+7 (812)
+                                        438-26-35</a>
+                                </div>
+
+                            </li>
+                            <li class="footer__adress-item">
+                                <div class="icons-wrapper">
+                                    <svg class="footer__adress-icon" width="16" height="16">
+                                        <use href="./images/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                    <a href="mailto:info@skinfra.ru"
+                                        class="footer__adress-link mailto">info@skinfra.ru</a>
+                                </div>
+
+                            </li>
+                            <li class="footer__adress-item">
+                                <div class="icons-wrapper">
+                                    <svg class="footer__adress-icon geo-icon" width="16" height="16">
+                                        <use href="./images/icons/sprite.svg#location"></use>
+                                    </svg>
+                                    <a href="" class="footer__adress-link geolocation">195197, Санкт-Петербург,<br>
+                                        Кондратьевский пр., д.
+                                        15,<br> к. 2, л.
+                                        З,офис 204 БЦ "Фернан<br> Леже"</a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </adress>
+
+                    <!-- !=========FORM========== -->
+                    <form class="form js-speaker-form" autocomplete="off">
+
+                        <div class="form__field-upload">
+                            <label class="form__label upload-files form__field-contacts" for="pdf">Скачать реквизиты
+                                <svg class="form__label-icon form__label-icon-contacts">
+                                    <use href="./images/icons/sprite.svg#upload"></use>
+                                </svg>
+                            </label>
+                            <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
+                        </div>
+
+                        <p class="form__text form__text-contacts">Информационная карта участника тендера:</p>
+
+                        <div class="form__field-upload">
+                            <label class="form__label upload-files form__field-contacts" for="pdf">Скачать,фаил PDF
+                                <svg class="form__label-icon form__label-icon-contacts">
+                                    <use href="./images/icons/sprite.svg#upload"></use>
+                                </svg>
+                            </label>
+                            <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
+                        </div>
+
+                        <b class="form__feedback form__feedback-contacts">Свяжитесь с нами</b>
+                        <p class="form__suptitle">Задайте вопрос, пришлите коммерческое предложение или пригласите
+                            на тендер
+                        </p>
+
+                        <div class="form__field ">
+                            <div class="form__field-name">
+                                <label class="form__label" for="name">Представьтесь, пожалуйста*</label>
+                                <input class="form__input" type="text" name="user-name" id="name" placeholder="Ваше имя"
+                                    required minlength="3">
+                            </div>
+
+                            <div class="form__field-number">
+                                <label class="form__label" for="phone">Ваш номер телефона</label>
+                                <input class="form__input" type="tel" name="user-phone-number" id="phone"
+                                    placeholder="+7 (___) ___-__-__" required>
+                            </div>
+
+                            <div class="form__field-upload">
+                                <label class="form__label upload-files" for="pdf">Скачать,фаил PDF
+                                    <svg class="form__label-icon">
+                                        <use href="./images/icons/sprite.svg#upload"></use>
+                                    </svg>
+                                </label>
+                                <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
+                            </div>
+
+                            <div class="form__field-policy">
+                                <input class="form__policy-checkbox visually-hidden" type="checkbox" name="policy"
+                                    id="policy">
+                                <label class="form__policy-label" for="policy">Я соглашаюсь с политикой
+                                    конфиденциальности
+                                </label>
+                            </div>
+
+                            <button class="form__field-submit" type="submit">Перезвоните мне</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    </div>
+
+</main>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/burger.js" type="module"></script>
+
+<body>
+
+</body>
+
+</html>

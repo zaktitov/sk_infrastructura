@@ -323,6 +323,130 @@ body.lock {
   border-color: var(--formInputColor);
 }
 
+.contacts {
+  overflow: auto;
+  min-height: 100%;
+}
+
+.contacts__content {
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  z-index: 3;
+}
+
+@media screen and (min-width: 360px) {
+  .contacts__content {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__content {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .contacts__content {
+    width: 1460px;
+  }
+}
+
+.current-page {
+  padding: 15px 0;
+}
+
+.current-page__container {
+  display: flex;
+  width: 100%;
+  padding: 0 20px 10px 20px;
+}
+
+@media screen and (min-width: 360px) {
+  .current-page__container {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .current-page__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .current-page__container {
+    width: 1460px;
+  }
+}
+
+.current-page__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #606060;
+}
+
+.is-active {
+  text-decoration-line: underline;
+}
+
+.is-active::before {
+  content: "/";
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer .section__contacts {
+  padding: 0;
+}
+
+.footer .footer__title-contacts {
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.form .form__text-contacts {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--mainTextColor);
+}
+
+.form .upload-files.form__field-contacts {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1460px) {
+  .form .upload-files.form__field-contacts {
+    width: 250px;
+  }
+}
+
+.form .form__feedback.form__feedback-contacts {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.8;
+  color: var(--mainTextColor);
+}
+
+.form__label-icon.form__label-icon-contacts {
+  transform: rotateX(180deg);
+  top: 16px;
+}
+
+@media screen and (min-width: 1460px) {
+  .form__label-icon.form__label-icon-contacts {
+    top: 22px;
+  }
+}
+
 .header__container {
   display: flex;
   width: 100%;
@@ -463,11 +587,44 @@ body.lock {
   line-height: 1.6;
 }
 
+.header__logo-link {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo-link {
+    margin-left: 30px;
+  }
+}
+
+.header__logo-icon {
+  width: 28px;
+  height: 33px;
+}
+
+.header__logo-text {
+  color: var(--mainTextColor);
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo-text {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo-text {
+    display: none;
+  }
+}
+
 .header__mob-number {
   margin-left: auto;
   color: var(--mainTextColor);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.45;
   transition: transform var(--transition-duration) var(--transition-timing-function);
   position: relative;
@@ -477,6 +634,12 @@ body.lock {
 @media screen and (max-width: 330px) {
   .header__mob-number {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .header__mob-number {
+    font-size: 20px;
   }
 }
 
@@ -563,6 +726,12 @@ body.lock {
   padding: 62px 0 62px 0px;
 }
 
+@media screen and (min-width: 1460px) {
+  .hero {
+    padding: 110px 0 110px 0;
+  }
+}
+
 .hero__ski-backgr {
   flex: 1 1 50%;
   display: inline-block;
@@ -581,7 +750,8 @@ body.lock {
 
 .hero__logo::before {
   content: "";
-  display: block;
+  display: inline-block;
+  width: 100%;
   background-image: url(../images/icons/logo222.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -677,7 +847,7 @@ body.lock {
 }
 
 .hero__full-comp-list {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.57;
   font-weight: 400;
   color: var(--mainTextColor);
@@ -724,12 +894,14 @@ body.lock {
   .footer__container {
     width: 768px;
     display: flex;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1460px) {
   .footer__container {
     width: 1460px;
+    justify-content: start;
   }
 }
 
@@ -781,7 +953,7 @@ body.lock {
   margin: 0 auto;
   width: 100%;
   height: 488px;
-  background: url(../images/icons/logo.svg) no-repeat 132px 130px, url(../images/footer/russia-pc1x.png) no-repeat left;
+  background: url(../images/icons/logo.svg) no-repeat 132px 130px, url(../images/footer/russia-pc1x.png) no-repeat;
   background-size: 22px 28px, cover;
 }
 
@@ -795,6 +967,7 @@ body.lock {
   .footer__background {
     width: 768px;
     background-size: 22px 28px, contain;
+    background-position: 270px 130px,center;
   }
 }
 

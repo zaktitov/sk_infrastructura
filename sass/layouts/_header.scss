@@ -1,5 +1,4 @@
 .header {
-
   // position: fixed;
   // top: 0;
   // left: 0;
@@ -11,17 +10,13 @@
   //   background-attachment: fixed;
   // }
 
-//   @media screen and (min-width:1460px){ 
-//     min-height: 100vh;
-//   background: url(../images/hero/hero-pc-1x.jpg);
-//   background-size: cover;
-//   display: flex;
-//   flex-direction: column;
-// }
-
-
-  
-
+  //   @media screen and (min-width:1460px){
+  //     min-height: 100vh;
+  //   background: url(../images/hero/hero-pc-1x.jpg);
+  //   background-size: cover;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
   // &::before {
   //   content: "";
@@ -36,7 +31,7 @@
   //   @media screen and (min-width:1460px){
   //     display: none;
   //   }
-    
+
   // }
 
   &__container {
@@ -46,18 +41,18 @@
     align-items: center;
     padding: 10px 20px;
 
-     @media screen and (min-width: 360px) {
-    width: 360px;
-  }
+    @media screen and (min-width: 360px) {
+      width: 360px;
+    }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
 
-  @media screen and (min-width: 1460px) {
-    width: 1460px;
-    padding:40px 20px 40px 20px;
-  }
+    @media screen and (min-width: 1460px) {
+      width: 1460px;
+      padding: 40px 20px 40px 20px;
+    }
   }
 
   &__burger {
@@ -66,8 +61,7 @@
     position: relative;
     z-index: 3;
     cursor: pointer;
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
   }
 
   &__burger:hover,
@@ -89,8 +83,7 @@
   &__burger::before {
     top: 0;
     width: 23px;
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
     margin-top: 5px;
   }
 
@@ -103,8 +96,7 @@
 
   &__burger::after {
     bottom: 0;
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
     margin-bottom: 5px;
   }
 
@@ -120,8 +112,7 @@
     background-color: white;
     position: absolute;
     top: 18px;
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
   }
 
   &__burger.active span {
@@ -138,8 +129,7 @@
 
     background-color: var(--bgc);
     transform: translateY(-100%);
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
     overflow: auto;
     opacity: 0;
   }
@@ -181,20 +171,49 @@
     font-size: 15px;
     line-height: 1.6;
   }
+  &__logo {
+    &-link {
+      display: inline-block;
+       margin-left: 15px;
+       @media screen and (min-width: 768px) {
+        margin-left: 30px;
+      }
+    }
+
+    &-icon {
+      width: 28px;
+      height: 33px;
+      
+    }
+    &-text {
+      color: var(--mainTextColor);
+      text-transform: uppercase;
+      @media screen and (min-width: 768px) {
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
 
   &__mob-number {
     margin-left: auto;
     color: var(--mainTextColor);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.45;
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
     position: relative;
     z-index: 4;
 
     @media screen and (max-width: 330px) {
       margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1460px) {
+      font-size: 20px;
     }
   }
 
@@ -216,8 +235,7 @@
     color: var(--secondaryTextColor);
 
     background-color: transparent;
-    transition: background-color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
     position: relative;
     z-index: 4;
 
@@ -242,8 +260,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.666;
-    transition: color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
     color: var(--secondaryTextColor);
 

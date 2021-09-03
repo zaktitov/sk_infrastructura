@@ -23,6 +23,9 @@
 
 .hero {
   padding: 62px 0 62px 0px;
+  @media screen and (min-width:1460px){
+    padding: 110px 0 110px 0;
+  }
   
 
   
@@ -49,7 +52,8 @@
 
   &__logo::before {
     content: "";
-    display: block;
+    display: inline-block;
+        width: 100%;
     background-image: url(../images/icons/logo222.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -139,7 +143,7 @@
     color: var(--mainTextColor);
 
     &-list {
-      font-size: 19px;
+      font-size: 18px;
       line-height: 1.57;
       font-weight: 400;
       color: var(--mainTextColor);
