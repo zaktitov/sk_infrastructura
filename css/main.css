@@ -108,6 +108,21 @@ body.lock {
   }
 }
 
+#map {
+  width: 90%;
+  height: 1050px;
+  flex: 1 0 40%;
+  margin-left: 20px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #map {
+    margin-top: 40px;
+    height: 400px;
+  }
+}
+
 .section {
   padding: 64px 0;
   background-color: #0e0e0e;
@@ -326,13 +341,14 @@ body.lock {
 .contacts {
   overflow: auto;
   min-height: 100%;
+  background-color: black;
 }
 
 .contacts__content {
   margin: 0 auto;
   width: 100%;
   color: white;
-  z-index: 3;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 360px) {
@@ -344,6 +360,7 @@ body.lock {
 @media screen and (min-width: 768px) {
   .contacts__content {
     width: 768px;
+    padding-bottom: 60px;
   }
 }
 
@@ -478,7 +495,7 @@ body.lock {
   width: 40px;
   height: 40px;
   position: relative;
-  z-index: 3;
+  z-index: 11;
   cursor: pointer;
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
@@ -543,16 +560,29 @@ body.lock {
   opacity: 0;
   width: 100%;
   height: 100%;
+  z-index: 10;
   background-color: var(--bgc);
   transform: translateY(-100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
   overflow: auto;
-  opacity: 0;
+}
+
+@media screen and (min-width: 1460px) {
+  .header__menu {
+    width: 50%;
+    transform: translateX(-100%);
+  }
 }
 
 .header__menu.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen and (min-width: 1460px) {
+  .header__menu.active {
+    transform: translateX(0);
+  }
 }
 
 .header__menu-list {
@@ -875,7 +905,7 @@ body.lock {
 }
 
 .footer.footer .flex-footer {
-  flex: 0 1 60%;
+  flex: 0 1 51%;
 }
 
 .footer__container {
@@ -1372,6 +1402,11 @@ body.lock {
   color: #ffffff;
   margin-bottom: 30px;
   letter-spacing: 0.1em;
+}
+
+.gm {
+  width: 500px;
+  height: 500px;
 }
 
 .screen {

@@ -96,3 +96,17 @@ body.lock {
   }
   
 }
+
+#map{
+  width: 90%;
+  height: 1050px;
+  flex: 1 0 40%;
+  margin-left: 20px;
+  z-index: 0;
+
+  @media screen and (max-width:767px){
+    margin-top: 40px;
+    height: 400px;
+  }
+  
+}

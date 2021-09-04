@@ -2,203 +2,241 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<title>Document</title>
 </head>
-<main class="contacts">
-    <div class="contacts__content">
-        <header class="header">
-            <div class="header__container">
-                <div class="header__burger">
-                    <span></span>
-                </div>
-
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Главная
-                            </a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Компания</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Вакансии</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="little">Услуги</span></a>
-                        </li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="header__span-little">Сети
-                                    водоснабжения</span></a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="header__span-little">Водоотведение и
-                                    канализация</span></a>
-                        </li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="header__span-little">Наружные
-                                    тепловые сети</span></a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="header__span-little">Монтаж
-                                    Ж/Б
-                                    конструкций</span></a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="header__span-little">Благоустройство территорий</span></a>
-                        </li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Проекты</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link">Контакты</a></li>
-                        <li class="header__menu-item"><a href="" class="header__menu-item-link"><span
-                                    class="header__span-little">Политика
-                                    конфиденциальности</span></a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <a href="" class="header__logo-link">
-                    <svg class="header__logo-icon">
-                        <use href="./images/icons/sprite.svg#logo"></use>
-                    </svg> <span class="header__logo-text">СК Инфраструктура</span></a>
-                <a class="header__mob-number" href="tel:+7(812)4016495"><span class="header__mob-number-color">+7
-                        (812)</span> 401-64-95</a>
-
-                <a class="header__form-btn" href="">
-                    <svg class="header__icon-phone" width="16" height="16">
-                        <use href="./images/icons/sprite.svg#phone"></use>
-                    </svg>
-                    <span class="header__form-btn-span">Обратный звонок</span>
-                </a>
-            </div>
-        </header>
-
-        <section class="current-page">
-            <div class="current-page__container">
-                <a href="./index.html" class="current-page__link">
-                    <p class="current-page__text">Главная</p>
-                </a>
-                <a href="" class="current-page__link">
-                    <p class="current-page__text is-active">Контакты</p>
-                </a>
-
-            </div>
-        </section>
-
-
-        <!-- !======FOOTER====== -->
-        <footer class="footer section__contacts">
-            <div class="footer footer__container">
-                <div class="flex-footer">
-                    <h2 class="footer__title footer__title-contacts">Контакты</h2>
-                    <h3 class="footer__subtitle">Офис в Санкт-Петербурге:</h3>
-
-                    <adress class="footer__adress">
-                        <ul class="footer__adress-list">
-                            <li class="footer__adress-item">
-                                <div class="icons-wrapper">
-                                    <svg class="footer__adress-icon" width="16" height="16">
-                                        <use href="./images/icons/sprite.svg#phone"></use>
-                                    </svg>
-                                    <a href="tel:+78124382635" class="footer__adress-link tel">+7 (812)
-                                        438-26-35</a>
-                                </div>
-
-                            </li>
-                            <li class="footer__adress-item">
-                                <div class="icons-wrapper">
-                                    <svg class="footer__adress-icon" width="16" height="16">
-                                        <use href="./images/icons/sprite.svg#mail"></use>
-                                    </svg>
-                                    <a href="mailto:info@skinfra.ru"
-                                        class="footer__adress-link mailto">info@skinfra.ru</a>
-                                </div>
-
-                            </li>
-                            <li class="footer__adress-item">
-                                <div class="icons-wrapper">
-                                    <svg class="footer__adress-icon geo-icon" width="16" height="16">
-                                        <use href="./images/icons/sprite.svg#location"></use>
-                                    </svg>
-                                    <a href="" class="footer__adress-link geolocation">195197, Санкт-Петербург,<br>
-                                        Кондратьевский пр., д.
-                                        15,<br> к. 2, л.
-                                        З,офис 204 БЦ "Фернан<br> Леже"</a>
-                                </div>
-
-                            </li>
-                        </ul>
-                    </adress>
-
-                    <!-- !=========FORM========== -->
-                    <form class="form js-speaker-form" autocomplete="off">
-
-                        <div class="form__field-upload">
-                            <label class="form__label upload-files form__field-contacts" for="pdf">Скачать реквизиты
-                                <svg class="form__label-icon form__label-icon-contacts">
-                                    <use href="./images/icons/sprite.svg#upload"></use>
-                                </svg>
-                            </label>
-                            <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
-                        </div>
-
-                        <p class="form__text form__text-contacts">Информационная карта участника тендера:</p>
-
-                        <div class="form__field-upload">
-                            <label class="form__label upload-files form__field-contacts" for="pdf">Скачать,фаил PDF
-                                <svg class="form__label-icon form__label-icon-contacts">
-                                    <use href="./images/icons/sprite.svg#upload"></use>
-                                </svg>
-                            </label>
-                            <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
-                        </div>
-
-                        <b class="form__feedback form__feedback-contacts">Свяжитесь с нами</b>
-                        <p class="form__suptitle">Задайте вопрос, пришлите коммерческое предложение или пригласите
-                            на тендер
-                        </p>
-
-                        <div class="form__field ">
-                            <div class="form__field-name">
-                                <label class="form__label" for="name">Представьтесь, пожалуйста*</label>
-                                <input class="form__input" type="text" name="user-name" id="name" placeholder="Ваше имя"
-                                    required minlength="3">
-                            </div>
-
-                            <div class="form__field-number">
-                                <label class="form__label" for="phone">Ваш номер телефона</label>
-                                <input class="form__input" type="tel" name="user-phone-number" id="phone"
-                                    placeholder="+7 (___) ___-__-__" required>
-                            </div>
-
-                            <div class="form__field-upload">
-                                <label class="form__label upload-files" for="pdf">Скачать,фаил PDF
-                                    <svg class="form__label-icon">
-                                        <use href="./images/icons/sprite.svg#upload"></use>
-                                    </svg>
-                                </label>
-                                <input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
-                            </div>
-
-                            <div class="form__field-policy">
-                                <input class="form__policy-checkbox visually-hidden" type="checkbox" name="policy"
-                                    id="policy">
-                                <label class="form__policy-label" for="policy">Я соглашаюсь с политикой
-                                    конфиденциальности
-                                </label>
-                            </div>
-
-                            <button class="form__field-submit" type="submit">Перезвоните мне</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </footer>
-    </div>
-    </div>
-
-</main>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/burger.js" type="module"></script>
 
 <body>
+	<main class="contacts">
+		<div class="contacts__content">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__burger">
+						<span></span>
+					</div>
+
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item"><a href="./index.html" class="header__menu-item-link">Главная
+								</a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link">Компания</a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link">Вакансии</a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="little">Услуги</span></a>
+							</li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="header__span-little">Сети
+										водоснабжения</span></a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="header__span-little">Водоотведение и
+										канализация</span></a>
+							</li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="header__span-little">Наружные
+										тепловые сети</span></a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="header__span-little">Монтаж
+										Ж/Б
+										конструкций</span></a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="header__span-little">Благоустройство территорий</span></a>
+							</li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link">Проекты</a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link">Контакты</a></li>
+							<li class="header__menu-item"><a href="" class="header__menu-item-link"><span
+										class="header__span-little">Политика
+										конфиденциальности</span></a>
+							</li>
+						</ul>
+					</nav>
+
+					<a href="" class="header__logo-link">
+						<svg class="header__logo-icon">
+							<use href="./images/icons/sprite.svg#logo"></use>
+						</svg> <span class="header__logo-text">СК Инфраструктура</span></a>
+					<a class="header__mob-number" href="tel:+7(812)4016495"><span class="header__mob-number-color">+7
+							(812)</span> 401-64-95</a>
+
+					<a class="header__form-btn" href="">
+						<svg class="header__icon-phone" width="16" height="16">
+							<use href="./images/icons/sprite.svg#phone"></use>
+						</svg>
+						<span class="header__form-btn-span">Обратный звонок</span>
+					</a>
+				</div>
+			</header>
+
+			<section class="current-page">
+				<div class="current-page__container">
+					<a href="./index.html" class="current-page__link">
+						<p class="current-page__text">Главная</p>
+					</a>
+					<a href="" class="current-page__link">
+						<p class="current-page__text is-active">Контакты</p>
+					</a>
+
+				</div>
+			</section>
+
+
+			<!-- !======FOOTER====== -->
+			<footer class="footer section__contacts">
+				<div class="footer footer__container">
+					<div class="flex-footer">
+						<h2 class="footer__title footer__title-contacts">Контакты</h2>
+						<h3 class="footer__subtitle">Офис в Санкт-Петербурге:</h3>
+
+						<adress class="footer__adress">
+							<ul class="footer__adress-list">
+								<li class="footer__adress-item">
+									<div class="icons-wrapper">
+										<svg class="footer__adress-icon" width="16" height="16">
+											<use href="./images/icons/sprite.svg#phone"></use>
+										</svg>
+										<a href="tel:+78124382635" class="footer__adress-link tel">+7 (812)
+											438-26-35</a>
+									</div>
+
+								</li>
+								<li class="footer__adress-item">
+									<div class="icons-wrapper">
+										<svg class="footer__adress-icon" width="16" height="16">
+											<use href="./images/icons/sprite.svg#mail"></use>
+										</svg>
+										<a href="mailto:info@skinfra.ru"
+											class="footer__adress-link mailto">info@skinfra.ru</a>
+									</div>
+
+								</li>
+								<li class="footer__adress-item">
+									<div class="icons-wrapper">
+										<svg class="footer__adress-icon geo-icon" width="16" height="16">
+											<use href="./images/icons/sprite.svg#location"></use>
+										</svg>
+										<a href="" class="footer__adress-link geolocation">195197, Санкт-Петербург,<br>
+											Кондратьевский пр., д.
+											15,<br> к. 2, л.
+											З,офис 204 БЦ "Фернан<br> Леже"</a>
+									</div>
+
+								</li>
+							</ul>
+						</adress>
+
+						<!-- !=========FORM========== -->
+						<form class="form js-speaker-form" autocomplete="off">
+
+							<div class="form__field-upload">
+								<label class="form__label upload-files form__field-contacts" for="pdf">Скачать реквизиты
+									<svg class="form__label-icon form__label-icon-contacts">
+										<use href="./images/icons/sprite.svg#upload"></use>
+									</svg>
+								</label>
+								<input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
+							</div>
+
+							<p class="form__text form__text-contacts">Информационная карта участника тендера:</p>
+
+							<div class="form__field-upload">
+								<label class="form__label upload-files form__field-contacts" for="pdf">Скачать,фаил PDF
+									<svg class="form__label-icon form__label-icon-contacts">
+										<use href="./images/icons/sprite.svg#upload"></use>
+									</svg>
+								</label>
+								<input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
+							</div>
+
+							<b class="form__feedback form__feedback-contacts">Свяжитесь с нами</b>
+							<p class="form__suptitle">Задайте вопрос, пришлите коммерческое предложение или пригласите
+								на тендер
+							</p>
+
+							<div class="form__field ">
+								<div class="form__field-name">
+									<label class="form__label" for="name">Представьтесь, пожалуйста*</label>
+									<input class="form__input" type="text" name="user-name" id="name"
+										placeholder="Ваше имя" required minlength="3">
+								</div>
+
+								<div class="form__field-number">
+									<label class="form__label" for="phone">Ваш номер телефона</label>
+									<input class="form__input" type="tel" name="user-phone-number" id="phone"
+										placeholder="+7 (___) ___-__-__" required>
+								</div>
+
+								<div class="form__field-upload">
+									<label class="form__label upload-files" for="pdf">Скачать,фаил PDF
+										<svg class="form__label-icon">
+											<use href="./images/icons/sprite.svg#upload"></use>
+										</svg>
+									</label>
+									<input class="form__input visually-hidden" type="file" name="pdf" id="pdf">
+								</div>
+
+								<div class="form__field-policy">
+									<input class="form__policy-checkbox visually-hidden" type="checkbox" name="policy"
+										id="policy">
+									<label class="form__policy-label" for="policy">Я соглашаюсь с политикой
+										конфиденциальности
+									</label>
+								</div>
+
+								<button class="form__field-submit" type="submit">Перезвоните мне</button>
+							</div>
+						</form>
+					</div>
+					<div id="map"></div>
+				</div>
+
+			</footer>
+
+		</div>
+
+
+
+		<script>
+			function initMap() {
+				// The location of Uluru
+				const uluru = { lat: 37.85719021656058, lng: - 122.42523081267048};
+				// The map, centered at Uluru
+				const map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 12,
+					center: uluru,
+					mapId: `f9a10f746d331c65`,
+				// 	styles: [{ featureType: `water`, elementType: `all`, stylers: [{ color: `#171717` }] },
+				// 	{ featureType: `landscape`, stylers: [{ color: `#262626` }] }, 
+				// 	{ featureType: `road`, elementType: `all`, stylers: [{ color: `#dcdcdc` }] },
+				// ],
+				});
+				const svgMarker = {
+					path: "M9.06055 35.7191V36.3955C9.06055 40.8904 11.3857 43.7433 13.4271 44.9161V27.8804C11.2329 28.9223 9.20792 29.2986 9.06055 35.7191Z M17.9849 47.627C18.7982 48.047 19.6769 48.478 20.6212 48.9417V31.9386L22.608 33.9242C23.1492 34.47 23.4532 35.2069 23.454 35.9753V48.9035C24.3983 48.4398 25.277 48.0034 26.0958 47.5834C26.612 47.3165 27.0445 46.9126 27.346 46.416C27.6474 45.9195 27.8059 45.3494 27.8042 44.7686V35.0643C27.8049 34.4024 27.6745 33.7469 27.4206 33.1356C27.1668 32.5243 26.7944 31.9692 26.325 31.5022L21.6255 26.8001L26.325 22.0979C26.7939 21.6306 27.166 21.0755 27.4198 20.4642C27.6736 19.853 27.8043 19.1977 27.8042 18.5359V1.68558L23.4376 0.0490966V17.6412C23.4368 18.4096 23.1328 19.1466 22.5916 19.6923L20.6048 21.6779V0L16.2383 1.63648V44.7904C16.2367 45.3788 16.3993 45.9559 16.7079 46.457C17.0164 46.9581 17.4587 47.3633 17.9849 47.627Z M43.922 11.0026C43.9237 10.0686 43.6404 9.15622 43.1099 8.38725C42.5794 7.61828 41.8269 7.02922 40.9528 6.69865L37.7106 5.46584V19.1796L34.9051 22.5289L34.9488 9.0661V4.41848L30.5822 2.782V44.785C33.6115 42.2758 34.8669 38.9373 34.8669 31.6932V29.3639L37.6779 25.9873V31.6932C37.6779 45.0632 33.2076 47.2561 24.2944 51.6201C23.5302 51.9965 22.7443 52.3783 21.9365 52.782C21.1286 52.3783 20.3427 51.9965 19.5785 51.6201C10.6653 47.2561 6.19505 45.0742 6.19505 31.6932V10.1134L9.02784 9.02245V17.0576C9.17521 23.478 11.2111 23.8544 13.3944 24.8963V2.73291L2.96926 6.69865C2.09516 7.02922 1.34268 7.61828 0.812168 8.38725C0.281661 9.15622 -0.00165448 10.0686 7.26839e-06 11.0026V12.4536L1.86125 11.7445V31.6495C1.86125 47.7253 8.4984 50.9764 17.69 55.4767C18.7434 56.0222 19.8351 56.5295 20.9649 57.1132L21.9528 57.6205L22.9408 57.1132C24.0761 56.535 25.1677 56.0222 26.2157 55.4767C35.3963 50.9764 42.0444 47.7253 42.0444 31.6495V11.7663L43.9057 12.4754L43.922 11.0026Z",
+					fillColor: "#E4B564",
+					fillOpacity: 1,
+					strokeWeight: 0,
+					rotation: 0,
+					scale: 1,
+				};
+				// The marker, positioned at Uluru
+				const marker = new google.maps.Marker({
+					position: uluru,
+					map: map,
+					icon: svgMarker,
+				});
+
+			}
+		</script>
+	</main>
+	</div>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtlUi6_8sb8la4SmdVpwXjj0hZ2xmcZMI&callback=initMap&libraries=&v=weekly"
+		async>
+		</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/burger.js" type="module"></script>
 
 </body>
 
