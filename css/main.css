@@ -378,6 +378,7 @@ body.lock {
   display: flex;
   width: 100%;
   padding: 0 20px 10px 20px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 360px) {
@@ -1447,6 +1448,11 @@ body.lock {
     background: url(../images/footer/russia-pc1x.png) no-repeat right;
     background-size: 49%;
   }
+}
+
+.screen-projects {
+  padding: 0 0 64px 0;
+  background-color: #0e0e0e;
 }
 
 :root {
