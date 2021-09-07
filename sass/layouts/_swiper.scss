@@ -83,21 +83,11 @@ min-height: 100vh;
  &-four{
     background-color: var(--bgc);
     min-height: 100vh;
-   //  background: url(../images/icons/logo.svg) no-repeat 132px 130px,
-   //    url(../images/footer/russia-pc1x.png) no-repeat;
-   //    background-position: 242px 241px, right;
-   //    background-size: 43px 58px, contain;
 
      @media screen and (min-width: 1460px) {
         background: 
       url(../images/footer/russia-pc1x.png) no-repeat right;
       background-size: 49%;
-
-
-      // url(../images/icons/logo.svg) no-repeat 132px 130px,
-      // 242px 241px,
-      // 43px 58px,
-
    
  }
 }

@@ -8,6 +8,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+
+    &-projects {
+      padding: 0;
+    }
     @media screen and (min-width: 360px) {
       width: 360px;
     }
@@ -23,6 +27,10 @@
   &__title {
     margin-bottom: 40px;
     @extend %h3;
+
+    &-projects{
+      padding: 0 20px;
+    }
   }
 
   &__list {
@@ -187,8 +195,7 @@
     @extend %hoverColor;
     border: 1px solid #e4b564;
 
-    transition: background-color var(--transition-duration)
-      var(--transition-timing-function);
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
 
     @media screen and (min-width: 768px) {
       width: 320px;
