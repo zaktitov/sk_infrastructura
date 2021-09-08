@@ -1463,6 +1463,106 @@ body.lock {
   background-color: #0e0e0e;
 }
 
+.page {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.page__pagination {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0px, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.page__bullet {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: orange;
+  margin: 10px 0;
+  transition: 0.3s ease 0s;
+}
+
+.page__bullet-active {
+  background-color: #fff;
+}
+
+.page__scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  background-color: transparent;
+  height: 100%;
+}
+
+.page__drag-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.screen {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.screen__content {
+  padding: 100px 25px 25px 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.screen__title {
+  font-size: 50px;
+}
+
+.screen__title-bg {
+  background-color: #232323;
+}
+
+.screen__body {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.screen__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.screen__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 :root {
   --bgc: #232323;
   --mainTextColor: #ffffff;
