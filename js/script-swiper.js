@@ -9,8 +9,9 @@ let pageSlider = new Swiper(`.page`, {
     onlyInViewport: false,
     pageUpDown: true,
   },
+  freeMode: false,
   mousewheel: {
-    sensitivity: 1,
+    sensitivity: false,
   },
   speed: 800,
   watchOverflow: true,
@@ -28,5 +29,22 @@ let pageSlider = new Swiper(`.page`, {
     el: `.page__scroll`,
     dragClass: `page__drag-scroll`,
     draggable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 640px
+    1460: {
+      slidesPerView: 1,
+      
+    },
   },
 });

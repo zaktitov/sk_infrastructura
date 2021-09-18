@@ -1,99 +1,141 @@
-.page {
-	position: fixed;
-	overflow: hidden;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
+.container {
+    max-width: 1460px;
+    padding: 0 5px 0 5px;
+    margin: 0 auto;
 
-	&__wrapper {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		width: 100%;
-	}
-
-	&__screen {
-	}
-
-	&__pagination {
-		position: absolute;
-		top: 50%;
-		right: 50px;
-		transform: translate(0px, -50%);
-		display: flex;
-		flex-direction: column;
-	}
-
-	&__bullet {
-		width: 10px;
-		height: 10px;
-		cursor: pointer;
-		background-color: orange;
-		margin: 10px 0;
-		transition: 0.3s ease 0s;
-	}
-	&__bullet-active {
-		background-color: #fff;
-	}
-
-	&__scroll {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 4px;
-		background-color: transparent;
-		height: 100%;
-	}
-
-	&__drag-scroll {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background-color: orange;
-		cursor: pointer;
-	}
+    @media screen and (min-width: 360px) {
+        padding: 0 20px 0 20px;
+    }
 }
-.screen {
-	flex: 1 0 100%;
-	position: relative;
-	&__content {
-		padding: 100px 25px 25px 25px;
-		position: relative;
-		z-index: 2;
-	}
 
-	&__title {
-		font-size: 50px;
-	}
+.vacancy {
+    width: 100%;
+    min-height: 100vw;
+    background-color: black;
+    &__container {
+        @media screen and (min-width: 495px) {
+            text-align: center;
+        }
 
-	&__title-bg {
-		background-color: #232323;
-	}
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-	&__body {
-		position: absolute;
-		overflow: hidden;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-	}
+        @media screen and (min-width:796px){
+            text-align: left;
+        }
+        
+    }
 
-	&__image {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-	}
+    &__container-text {
+        padding-top: 25px;
+        @media screen and (min-width: 768px) {
+            flex: 1 1 50%;
+            padding: 35px 0 75px 0;
+        }
+    }
 
-	&__image img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-	}
+    &__titles {
+        margin-top: 40px;
+    }
+
+    &__list-wrapper {
+        margin-top: 20px;
+    }
+
+    &__list-heading {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+    }
+
+    &__list {
+        margin-top: 8px;
+        
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    &__btn {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 48px;
+        max-width: 320px;
+        margin-top: 40px;
+
+        border: 1px solid orange;
+        color: orange;
+    }
+
+    &__container-bg {
+        margin: 50px auto 0 auto;
+        max-width: 310px;
+        height: 410px;
+        background: url(../images/vacancy/stroitel1x-mob-min.png) no-repeat,
+            black url(../images/vacancy/sh1x-mob-min.jpg) no-repeat;
+        background-size: cover;
+
+        @media screen and (min-width: 768px) {
+            flex: 1 1 50%;
+            align-self: flex-end;
+            margin: 0 auto 0 auto;
+        }
+        
+        @media screen and (min-width: 1030px) {
+                    max-width: 516px;
+                    height: 678px;
+                background: url(../images/vacancy/stroitel1x-pc-min.png) no-repeat,
+                     url(../images/vacancy/sh1x-pc.png) no-repeat;
+                background-size: cover;
+            
+        }
+
+        @media screen and (min-width:1300px){
+            margin-right: 100px;
+        }
+        
+    }
+}
+
+.page {
+    &__active {
+    }
+
+    &__link {
+        display: inline-block;
+        color: #606060;
+    }
+}
+.main-title {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 28px;
+}
+.sub-title {
+    margin-top: 75px;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+}
+.requirements {
+    &__link {
+        margin-top: 30px;
+        display: inline-block;
+        color: orange;
+    }
 }

@@ -1418,12 +1418,12 @@ body.lock {
   height: 500px;
 }
 
-.screen {
+.screen__index {
   background-color: #0e0e0e;
 }
 
 @media screen and (min-width: 1460px) {
-  .screen {
+  .screen__index {
     min-height: 100vh;
     background: url(../images/hero/hero-pc-1x.jpg);
     background-size: cover;
@@ -1431,28 +1431,28 @@ body.lock {
 }
 
 @media screen and (min-width: 1460px) and (min-device-pixel-ratio: 2), screen and (min-width: 1460px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1460px) and (min-resolution: 192dpi), screen and (min-width: 1460px) and (min-resolution: 2dppx) {
-  .screen {
+  .screen__index {
     background-image: url(../images/hero/hero-pc-2x.jpg);
   }
 }
 
-.screen-two {
+.screen__index-two {
   background-color: var(--bgc);
   min-height: 100vh;
 }
 
-.screen-three {
+.screen__index-three {
   background-color: #0e0e0e;
   min-height: 100vh;
 }
 
-.screen-four {
+.screen__index-four {
   background-color: var(--bgc);
   min-height: 100vh;
 }
 
 @media screen and (min-width: 1460px) {
-  .screen-four {
+  .screen__index-four {
     background: url(../images/footer/russia-pc1x.png) no-repeat right;
     background-size: 49%;
   }
@@ -1463,104 +1463,150 @@ body.lock {
   background-color: #0e0e0e;
 }
 
-.page {
-  position: fixed;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+.container {
+  max-width: 1460px;
+  padding: 0 5px 0 5px;
+  margin: 0 auto;
 }
 
-.page__wrapper {
+@media screen and (min-width: 360px) {
+  .container {
+    padding: 0 20px 0 20px;
+  }
+}
+
+.vacancy {
+  width: 100%;
+  min-height: 100vw;
+  background-color: black;
+}
+
+@media screen and (min-width: 495px) {
+  .vacancy__container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .vacancy__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 796px) {
+  .vacancy__container {
+    text-align: left;
+  }
+}
+
+.vacancy__container-text {
+  padding-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .vacancy__container-text {
+    flex: 1 1 50%;
+    padding: 35px 0 75px 0;
+  }
+}
+
+.vacancy__titles {
+  margin-top: 40px;
+}
+
+.vacancy__list-wrapper {
+  margin-top: 20px;
+}
+
+.vacancy__list-heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.vacancy__list {
+  margin-top: 8px;
+}
+
+.vacancy__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.vacancy__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.vacancy__btn {
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  max-width: 320px;
+  margin-top: 40px;
+  border: 1px solid orange;
+  color: orange;
 }
 
-.page__pagination {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  transform: translate(0px, -50%);
-  display: flex;
-  flex-direction: column;
+.vacancy__container-bg {
+  margin: 50px auto 0 auto;
+  max-width: 310px;
+  height: 410px;
+  background: url(../images/vacancy/stroitel1x-mob-min.png) no-repeat, black url(../images/vacancy/sh1x-mob-min.jpg) no-repeat;
+  background-size: cover;
 }
 
-.page__bullet {
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-  background-color: orange;
-  margin: 10px 0;
-  transition: 0.3s ease 0s;
+@media screen and (min-width: 768px) {
+  .vacancy__container-bg {
+    flex: 1 1 50%;
+    align-self: flex-end;
+    margin: 0 auto 0 auto;
+  }
 }
 
-.page__bullet-active {
-  background-color: #fff;
+@media screen and (min-width: 1030px) {
+  .vacancy__container-bg {
+    max-width: 516px;
+    height: 678px;
+    background: url(../images/vacancy/stroitel1x-pc-min.png) no-repeat, url(../images/vacancy/sh1x-pc.png) no-repeat;
+    background-size: cover;
+  }
 }
 
-.page__scroll {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 4px;
-  background-color: transparent;
-  height: 100%;
+@media screen and (min-width: 1300px) {
+  .vacancy__container-bg {
+    margin-right: 100px;
+  }
 }
 
-.page__drag-scroll {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: orange;
-  cursor: pointer;
+.page__link {
+  display: inline-block;
+  color: #606060;
 }
 
-.screen {
-  flex: 1 0 100%;
-  position: relative;
+.main-title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 28px;
 }
 
-.screen__content {
-  padding: 100px 25px 25px 25px;
-  position: relative;
-  z-index: 2;
+.sub-title {
+  margin-top: 75px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
 }
 
-.screen__title {
-  font-size: 50px;
-}
-
-.screen__title-bg {
-  background-color: #232323;
-}
-
-.screen__body {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.screen__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.screen__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.requirements__link {
+  margin-top: 30px;
+  display: inline-block;
+  color: orange;
 }
 
 :root {
