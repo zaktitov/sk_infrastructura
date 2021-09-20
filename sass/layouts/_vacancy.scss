@@ -8,24 +8,22 @@
     }
 }
 
-.vacancy {
+.header__container-vacancy {
+    display: flex;
     width: 100%;
-    min-height: 100vw;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1460px;
+}
+
+.vacancy {
     background-color: black;
     &__container {
-        @media screen and (min-width: 495px) {
-            text-align: center;
-        }
-
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
         }
-
-        @media screen and (min-width:796px){
-            text-align: left;
-        }
-        
     }
 
     &__container-text {
@@ -35,9 +33,19 @@
             padding: 35px 0 75px 0;
         }
     }
+    &__container-third {
+        padding-top: 0;
+        @media screen and (min-width: 1030px) {
+            padding: 233px 0 233px 0;
+        }
+    }
 
     &__titles {
         margin-top: 40px;
+
+        &-third {
+            margin-top: 0;
+        }
     }
 
     &__list-wrapper {
@@ -45,6 +53,8 @@
     }
 
     &__list-heading {
+        text-decoration: underline;
+        text-decoration-color: #e4b564;
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
@@ -53,14 +63,27 @@
 
     &__list {
         margin-top: 8px;
-        
     }
 
     &__item {
+        position: relative;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
         color: #ffffff;
+    }
+
+    &__item::before {
+        position: absolute;
+        left: -11px;
+        top: 11px;
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #e4b564;
+        transform: translateY(-3px);
     }
 
     &__item:not(:first-child) {
@@ -68,16 +91,18 @@
     }
 
     &__btn {
-        margin: 0 auto;
+        margin-top: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 48px;
         max-width: 320px;
-        margin-top: 40px;
 
-        border: 1px solid orange;
-        color: orange;
+        border: 1px solid #e4b564;
+        color: #e4b564;
+        @media screen and (max-width: 796px) {
+            margin: 40px auto 0 auto;
+        }
     }
 
     &__container-bg {
@@ -85,7 +110,7 @@
         max-width: 310px;
         height: 410px;
         background: url(../images/vacancy/stroitel1x-mob-min.png) no-repeat,
-            black url(../images/vacancy/sh1x-mob-min.jpg) no-repeat;
+            url(../images/vacancy/sh1x-mob.png) no-repeat;
         background-size: cover;
 
         @media screen and (min-width: 768px) {
@@ -93,30 +118,41 @@
             align-self: flex-end;
             margin: 0 auto 0 auto;
         }
-        
+
         @media screen and (min-width: 1030px) {
-                    max-width: 516px;
-                    height: 678px;
-                background: url(../images/vacancy/stroitel1x-pc-min.png) no-repeat,
-                     url(../images/vacancy/sh1x-pc.png) no-repeat;
-                background-size: cover;
-            
+            max-width: 516px;
+            height: 678px;
+            background: url(../images/vacancy/stroitel1x-pc-min.png) no-repeat,
+                url(../images/vacancy/sh1x-pc.png) no-repeat;
+            background-size: cover;
         }
 
-        @media screen and (min-width:1300px){
+        @media screen and (min-width: 1300px) {
             margin-right: 100px;
         }
-        
+    }
+
+    &__third {
+        padding-top: 70px;
+    }
+}
+
+.second-bg {
+    background: url(../images/vacancy/st21x-mob.png) no-repeat, url(../images/vacancy/sh1x-mob.png) no-repeat;
+
+    @media screen and (min-width: 1030px) {
+        background: url(../images/vacancy/st21x-pc.png) no-repeat, url(../images/vacancy/sh1x-pc.png) no-repeat;
     }
 }
 
 .page {
-    &__active {
-    }
-
     &__link {
         display: inline-block;
         color: #606060;
+
+        &-active {
+            text-decoration: underline;
+        }
     }
 }
 .main-title {
@@ -132,10 +168,103 @@
     line-height: 28px;
     color: #ffffff;
 }
+
+.sub-title__third {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+}
 .requirements {
     &__link {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.2;
+
+        color: #e4b564;
         margin-top: 30px;
         display: inline-block;
-        color: orange;
+        color: #e4b564;
+        border-bottom: 1px #e4b564 dashed;
+    }
+}
+
+.vacancy__second {
+    background-color: var(--bgc);
+}
+
+.vacancy__container-second {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+}
+
+.second__text {
+    @media screen and (min-width: 796px) and (max-width: 1300px) {
+        padding-left: 40px;
+    }
+    @media screen and (min-width: 1460px) {
+        padding-top: 159px;
+    }
+}
+
+.staff {
+    margin-top: 8px;
+
+    &__item {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+
+        &::before {
+            position: absolute;
+            left: -11px;
+            top: 11px;
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #e4b564;
+            transform: translateY(-3px);
+        }
+
+        &:not(:first-child){
+            margin-top: 8px;
+        }
+    }
+}
+
+.installation {
+    margin-top: 32px;
+
+    &__list{
+        margin-top: 6px;
+    }
+
+    &__item {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #ffffff;
+
+        &::before {
+            position: absolute;
+            left: -11px;
+            top: 16px;
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #e4b564;
+            transform: translateY(-3px);
+        }
+
     }
 }
