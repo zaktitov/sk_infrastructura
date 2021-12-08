@@ -13,8 +13,13 @@
     width: 100%;
     margin: 0 auto;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 5px;
     max-width: 1460px;
+
+    @media screen and (min-width:360px){
+        padding: 10px 20px;
+    }
+    
 }
 
 .vacancy {

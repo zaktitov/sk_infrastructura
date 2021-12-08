@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $(`.slider`).slick({
-    arrows: true, dots: true,
+    arrows: true,
+    dots: true,
     adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -8,7 +9,7 @@ $(document).ready(function () {
     easing: "ease",
     infinite: true,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
     pauseOnFocus: true,
     pauseOnHover: true,
@@ -23,22 +24,20 @@ $(document).ready(function () {
     slidesPerRow: false,
     vertical: false,
     verticalSwiping: false,
-     responsive: [
-    {
-      breakpoint: 1460,
-    },
-    {
-      breakpoint: 768,
-    },
-    {
-      breakpoint: 360,
-    }
-  ],
+    responsive: [
+      {
+        breakpoint: 1460,
+      },
+      {
+        breakpoint: 768,
+      },
+      {
+        breakpoint: 360,
+      },
+    ],
     appendArrows: $(`.content`),
     appendDots: $(`.content`),
     fade: false,
-    
   });
   $(`.slider`).slick(`setPosition`);
-  
 });
